@@ -17,11 +17,11 @@ menu:
         - name: CV
           url: cv.pdf
           weight: 2
-        - name: Project
-          url: papers/
+        - name: Projects
+          url: /projects/
           weight: 3
         - name: Design
-          url: courses/
+          url: /design/
           weight: 4
 
 params:
@@ -49,7 +49,7 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Lechen Zhang
+          title: Lechen (Ervin) Zhang
           subtitle: "I am Lechen Zhang (张乐晨), a graduate student in Mechanical Engineering at Columbia University. My research intersets are in Robotics, Machine Intellegence and Computer Vision."
           imageUrl: "pic.jpg"
           imageWidth: 160
@@ -58,10 +58,10 @@ params:
           buttons:
             - name: CV
               url: /cv.pdf
-            - name: Project
-              url: /papers/
+            - name: Projects
+              url: /projects/
             - name: Design
-              url: /courses/
+              url: /design/
             - name: Tags
               url: /tags/
             - name: Archive
