@@ -6,14 +6,14 @@
     <description>Recent content in Evolutionary Algorithm on Lechen Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/evolutionary-algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/evolutionary-algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Paper Title 2</title>
-      <link>https://ErvinZzz.github.io/projects/softevolution/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <title>Implicit Neural Evolution with LLM Supervision</title>
+      <link>https://ErvinZzz.github.io/projects/soft_evolution/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/projects/softevolution/</guid>
-      <description>This paper shows other things. Published in Journal Name, 2015.</description>
+      <guid>https://ErvinZzz.github.io/projects/soft_evolution/</guid>
+      <description>MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023.</description>
     </item>
     
   </channel>

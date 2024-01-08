@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prototyping on Lechen Zhang</title>
+    <link>https://ErvinZzz.github.io/tags/prototyping/</link>
+    <description>Recent content in Prototyping on Lechen Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/prototyping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Water-Land Amphibious Vehicle</title>
+      <link>https://ErvinZzz.github.io/design/amphibious_vehicle/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/design/amphibious_vehicle/</guid>
+      <description>Water-Land Amphibious Vehicle Design, 2021.</description>
+    </item>
+    
+    <item>
+      <title>B-Bot: A K-12 STEM Education Modular Robot</title>
+      <link>https://ErvinZzz.github.io/design/k12_robot/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/design/k12_robot/</guid>
+      <description>Marine Gearbox Design, 2021.</description>
+    </item>
+    
+  </channel>
+</rss>

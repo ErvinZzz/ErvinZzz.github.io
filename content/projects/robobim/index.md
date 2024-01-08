@@ -3,8 +3,8 @@ title: "RoboBIM: An Autonomous Building Information Modelling System"
 date: 2022-06-01
 tags: ["ROS","Gazebo","SLAM","3D Reconstruction","LOAM", "Localization", "Sensor Fusion", "Python", "C++"]
 author: "Lechen Zhang"
-description: "Bachelor Thesis Project at University of Nottingham, supervised by Prof. Adam Rushworth, 2022." 
-summary: "Bachelor Thesis Project at University of Nottingham" 
+description: "Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth, 2022." 
+summary: "Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth" 
 cover:
     image: "robobim1.jpg"
     alt: "Image caption"
@@ -12,9 +12,11 @@ cover:
 
 ---
 
+---
+
 ##### Abstract
 
-Traditional as-built Building Information Modeling (BIM) is a costly, time-consuming and dangerous task. The use of robotics technology to automate this task is a promising and valuable research.
+Traditional as-built Building Information Modeling (BIM) is a costly, time-consuming and dangerous task. The use of robotics technology to automate this task is promising and valuable research.
 
 ---
 
@@ -40,7 +42,7 @@ The Software is built upon [ROS](https://www.ros.org/) and the simulation enviro
 
 ![](robobim8.png)
 
-The LiDAR Odometry and Mapping (LOAM) algorithm is modified from Ji Zhang's [original implimentation](https://github.com/HKUST-Aerial-Robotics/A-LOAM). To make full use of the spinning LiDAR and the solid state LiDAR, the front end is modified to support multi-LiDAR fusion with a calibration matrix. Besides, IMU data is used in the ICP (Iterative Closest Points) scan matching for a better localization and mapping performance (especially in dealing with drift in z axis).
+The LiDAR Odometry and Mapping (LOAM) algorithm is modified from Ji Zhang's [original implimentation](https://github.com/HKUST-Aerial-Robotics/A-LOAM). To make full use of the spinning LiDAR and the solid-state LiDAR, the front end is modified to support multi-LiDAR fusion with a calibration matrix. Besides, IMU data is used in the ICP (Iterative Closest Points) scan matching for better localization and mapping performance (especially in dealing with drift in z-axis).
 
 ![](robobim9.png)
 

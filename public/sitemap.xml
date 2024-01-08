@@ -2,32 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ErvinZzz.github.io/data/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/3d-reconstruction/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/data/data1/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/deep-learning/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-10/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-5/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-6/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-7/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/projects/depth_nerf/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/nerf/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/neural-networks/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/projects/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/python/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/3d-reconstruction/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/tensorflow/</loc>
+    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/cuda/</loc>
+    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/evolutionary-algorithm/</loc>
+    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/projects/soft_evolution/</loc>
+    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/llm/</loc>
+    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/soft-robot/</loc>
+    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
@@ -39,12 +57,6 @@
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/localization/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/projects/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/python/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/projects/robobim/</loc>
@@ -59,64 +71,39 @@
     <loc>https://ErvinZzz.github.io/tags/slam/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/courses/course1/</loc>
-    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/3d-printing/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/courses/</loc>
-    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/cad/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-1/</loc>
-    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/cfd/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-2/</loc>
-    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-3/</loc>
-    <lastmod>2022-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/courses/course2/</loc>
-    <lastmod>2021-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/keyword-4/</loc>
-    <lastmod>2021-06-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/cuda/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/cnc/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/design/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/evolutionary-algorithm/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/laser-cutting/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/neural-networks/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/manufacturing/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/design/paper2/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/tags/prototyping/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/papers/paper2/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/design/amphibious_vehicle/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/projects/softevolution/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/design/marine_gearbox/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/papers/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/soft-robot/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/design/paper1/</loc>
-    <lastmod>2012-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/papers/paper1/</loc>
-    <lastmod>2012-06-01T00:00:00+00:00</lastmod>
+    <loc>https://ErvinZzz.github.io/design/k12_robot/</loc>
+    <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/archive/</loc>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/location/</loc>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/officehours/</loc>
   </url>
 </urlset>

@@ -6,14 +6,23 @@
     <description>Recent content in 3D Reconstruction on Lechen Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/3d-reconstruction/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/3d-reconstruction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Depth Supervised Neural Radiance Fields</title>
+      <link>https://ErvinZzz.github.io/projects/depth_nerf/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/projects/depth_nerf/</guid>
+      <description>ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023.</description>
+    </item>
+    
     <item>
       <title>RoboBIM: An Autonomous Building Information Modelling System</title>
       <link>https://ErvinZzz.github.io/projects/robobim/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/projects/robobim/</guid>
-      <description>Bachelor Thesis Project at University of Nottingham, supervised by Prof. Adam Rushworth, 2022.</description>
+      <description>Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth, 2022.</description>
     </item>
     
   </channel>

@@ -49,9 +49,9 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Lechen (Ervin) Zhang
-          subtitle: "I am Lechen Zhang (张乐晨), a graduate student in Mechanical Engineering at Columbia University. My research intersets are in Robotics, Machine Intellegence and Computer Vision."
-          imageUrl: "pic.jpg"
+          title: Lechen Zhang
+          subtitle: "I am Lechen Zhang(张乐晨), graduate student in Mechanical Engineering at Columbia University. My research intersets are in Robotics, Machine Intellegence and Computer Vision."
+          imageUrl: "pic.png"
           imageWidth: 160
           imageHeight: 160
           imageTitle: Lechen Zhang

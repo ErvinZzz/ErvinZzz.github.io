@@ -6,49 +6,94 @@
     <description>Recent content in Tags on Lechen Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>keyword 10</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-10/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/keyword-10/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyword 5</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-5/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/keyword-5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyword 6</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-6/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/keyword-6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>keyword 7</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-7/</link>
-      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/keyword-7/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Reconstruction</title>
       <link>https://ErvinZzz.github.io/tags/3d-reconstruction/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/tags/3d-reconstruction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://ErvinZzz.github.io/tags/deep-learning/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NeRF</title>
+      <link>https://ErvinZzz.github.io/tags/nerf/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/nerf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>https://ErvinZzz.github.io/tags/neural-networks/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://ErvinZzz.github.io/tags/python/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TensorFlow</title>
+      <link>https://ErvinZzz.github.io/tags/tensorflow/</link>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CUDA</title>
+      <link>https://ErvinZzz.github.io/tags/cuda/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evolutionary Algorithm</title>
+      <link>https://ErvinZzz.github.io/tags/evolutionary-algorithm/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/evolutionary-algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LLM</title>
+      <link>https://ErvinZzz.github.io/tags/llm/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soft Robot</title>
+      <link>https://ErvinZzz.github.io/tags/soft-robot/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/soft-robot/</guid>
       <description></description>
     </item>
     
@@ -89,15 +134,6 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://ErvinZzz.github.io/tags/python/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ROS</title>
       <link>https://ErvinZzz.github.io/tags/ros/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
@@ -125,74 +161,65 @@
     </item>
     
     <item>
-      <title>keyword 1</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-1/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <title>3D Printing</title>
+      <link>https://ErvinZzz.github.io/tags/3d-printing/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/keyword-1/</guid>
+      <guid>https://ErvinZzz.github.io/tags/3d-printing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>keyword 2</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-2/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <title>CAD</title>
+      <link>https://ErvinZzz.github.io/tags/cad/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/keyword-2/</guid>
+      <guid>https://ErvinZzz.github.io/tags/cad/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>keyword 3</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-3/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <title>CFD</title>
+      <link>https://ErvinZzz.github.io/tags/cfd/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/keyword-3/</guid>
+      <guid>https://ErvinZzz.github.io/tags/cfd/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>keyword 4</title>
-      <link>https://ErvinZzz.github.io/tags/keyword-4/</link>
-      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      <title>CNC</title>
+      <link>https://ErvinZzz.github.io/tags/cnc/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/keyword-4/</guid>
+      <guid>https://ErvinZzz.github.io/tags/cnc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CUDA</title>
-      <link>https://ErvinZzz.github.io/tags/cuda/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <title>Laser Cutting</title>
+      <link>https://ErvinZzz.github.io/tags/laser-cutting/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/cuda/</guid>
+      <guid>https://ErvinZzz.github.io/tags/laser-cutting/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Evolutionary Algorithm</title>
-      <link>https://ErvinZzz.github.io/tags/evolutionary-algorithm/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <title>Manufacturing</title>
+      <link>https://ErvinZzz.github.io/tags/manufacturing/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/evolutionary-algorithm/</guid>
+      <guid>https://ErvinZzz.github.io/tags/manufacturing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Neural Networks</title>
-      <link>https://ErvinZzz.github.io/tags/neural-networks/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <title>Prototyping</title>
+      <link>https://ErvinZzz.github.io/tags/prototyping/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/tags/neural-networks/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Soft Robot</title>
-      <link>https://ErvinZzz.github.io/tags/soft-robot/</link>
-      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/soft-robot/</guid>
+      <guid>https://ErvinZzz.github.io/tags/prototyping/</guid>
       <description></description>
     </item>
     
