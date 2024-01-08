@@ -54,4 +54,4 @@ cover:
 
 ##### Related material
 
-+ [Presentation slides](presentation2.pdf)
++ [Presentation slides](pre.pdf)
