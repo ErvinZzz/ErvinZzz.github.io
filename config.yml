@@ -23,6 +23,9 @@ menu:
         - name: Design
           url: /design/
           weight: 4
+        - name: Code
+          url: /code/
+          weight: 5
 
 params:
     description: "I am Lechen Zhang (张乐晨), a graduate student in Mechanical Engineering at Columbia University. My research intersets are in Robotics, Machine Intellegence and Computer Vision."
@@ -62,6 +65,8 @@ params:
               url: /projects/
             - name: Design
               url: /design/
+            - name: Code
+              url: /code/
             - name: Tags
               url: /tags/
             - name: Archive

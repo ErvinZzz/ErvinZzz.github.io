@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning | Lechen Zhang</title>
+<meta name="keywords" content="Adversarial Search, Python">
+<meta name="description" content="Efficient 2048 Game Solver Coding Assignment, 2023.">
+<meta name="author" content="Lechen Zhang">
+<link rel="canonical" href="https://ErvinZzz.github.io/code/2048/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6f39f52dfb95ec8d899e82204ff143285499dec7c64e0320b01e7e1c94be7e2a.css" integrity="sha256-bzn1LfuV7I2JnoIgT/FDKFSZ3sfGTgMgsB5&#43;HJS&#43;fio=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://ErvinZzz.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ErvinZzz.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ErvinZzz.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://ErvinZzz.github.io/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning" />
+<meta property="og:description" content="Efficient 2048 Game Solver Coding Assignment, 2023." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ErvinZzz.github.io/code/2048/" />
+<meta property="og:image" content="https://ErvinZzz.github.io/2048.gif" /><meta property="article:section" content="code" />
+<meta property="article:published_time" content="2023-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-10-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://ErvinZzz.github.io/2048.gif" />
+<meta name="twitter:title" content="2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning"/>
+<meta name="twitter:description" content="Efficient 2048 Game Solver Coding Assignment, 2023."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Code",
+      "item": "https://ErvinZzz.github.io/code/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning",
+      "item": "https://ErvinZzz.github.io/code/2048/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning",
+  "name": "2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning",
+  "description": "Efficient 2048 Game Solver Coding Assignment, 2023.",
+  "keywords": [
+    "Adversarial Search", "Python"
+  ],
+  "articleBody": " Abstract A super fast 2048 game solver using expectiminimax adversarial search. Utilize alpha-Beta pruning and some special design efficient heuristic functions to achieve high efficiency and good performance(0.2s calculation time for each step and near 100% chance of reaching 2048).\nImplementation 1. Monocity This heuristic tries to ensure that the values of the tiles are all either increasing or decreasing along both the left/right and up/down directions. This heuristic alone captures the intuition that many others have mentioned, that higher valued tiles should be clustered in a corner. It will typically prevent smaller valued tiles from getting orphaned and will keep the board very organized, with smaller tiles cascading in and filling up into the larger tiles.\nAn example of the perfect monotonic grid 2. Smoothness The above heuristic alone tends to create structures in which adjacent tiles are decreasing in value, but of course in order to merge, adjacent tiles need to be the same value. Therefore, the smoothness heuristic just measures the value difference between neighboring tiles, trying to minimize this count.\nAn example of the perfect smooth grid Code Github ",
+  "wordCount" : "183",
+  "inLanguage": "en",
+  "image":"https://ErvinZzz.github.io/2048.gif","datePublished": "2023-10-01T00:00:00Z",
+  "dateModified": "2023-10-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Lechen Zhang"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ErvinZzz.github.io/code/2048/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lechen Zhang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ErvinZzz.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://ErvinZzz.github.io/" accesskey="h" title="Lechen Zhang">
+             
+                <img src="https://ErvinZzz.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Lechen Zhang</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://ErvinZzz.github.io/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/cv.pdf" title="CV">
+                    <span>CV</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/design/" title="Design">
+                    <span>Design</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/code/" title="Code">
+                    <span>Code</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2023-10-01 00:00:00 &#43;0000 UTC&#39;&gt;October 2023&lt;/span&gt;&amp;nbsp;&amp;middot;&amp;nbsp;Lechen Zhang
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h2 id="abstract">Abstract</h2>
+<p>A super fast 2048 game solver using expectiminimax adversarial search. Utilize alpha-Beta pruning and some special design efficient heuristic functions to achieve high efficiency and good performance(0.2s calculation time for each step and near 100% chance of reaching 2048).</p>
+<hr>
+<h2 id="implementation">Implementation</h2>
+<h3 id="1-monocity">1. Monocity</h3>
+<p>This heuristic tries to ensure that the values of the tiles are all either increasing or decreasing along both the left/right and up/down directions. This heuristic alone captures the intuition that many others have mentioned, that higher valued tiles should be clustered in a corner. It will typically prevent smaller valued tiles from getting orphaned and will keep the board very organized, with smaller tiles cascading in and filling up into the larger tiles.</p>
+<h5 id="an-example-of-the-perfect-monotonic-grid">An example of the perfect monotonic grid</h5>
+<p><img loading="lazy" src="mono.png" alt=""  />
+</p>
+<h3 id="2-smoothness">2. Smoothness</h3>
+<p>The above heuristic alone tends to create structures in which adjacent tiles are decreasing in value, but of course in order to merge, adjacent tiles need to be the same value. Therefore, the smoothness heuristic just measures the value difference between neighboring tiles, trying to minimize this count.</p>
+<h5 id="an-example-of-the-perfect-smooth-grid">An example of the perfect smooth grid</h5>
+<p><img loading="lazy" src="smooth.png" alt=""  />
+</p>
+<hr>
+<h2 id="code">Code</h2>
+<p><a href="https://github.com/ErvinZzz/efficient_2048_solver" target="_blank">Github</a>
+</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://ErvinZzz.github.io/tags/adversarial-search/">Adversarial Search</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/python/">Python</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

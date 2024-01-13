@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Code on Lechen Zhang</title>
+    <link>https://ErvinZzz.github.io/code/</link>
+    <description>Recent content in Code on Lechen Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2048 Game Solver Using Expectiminimax and Alpha-Beta Pruning</title>
+      <link>https://ErvinZzz.github.io/code/2048/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/code/2048/</guid>
+      <description>Efficient 2048 Game Solver Coding Assignment, 2023.</description>
+    </item>
+    
+    <item>
+      <title>RRT-Connect Algorithm for Manipulation Motion Planning</title>
+      <link>https://ErvinZzz.github.io/code/rrt_connect/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/code/rrt_connect/</guid>
+      <description>Manipulation Motion Planning, 2023.</description>
+    </item>
+    
+  </channel>
+</rss>

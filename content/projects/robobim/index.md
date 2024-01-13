@@ -1,7 +1,7 @@
 ---
 title: "RoboBIM: An Autonomous Building Information Modelling System" 
 date: 2022-06-01
-tags: ["ROS","Gazebo","SLAM","3D Reconstruction","LOAM", "Localization", "Sensor Fusion", "Python", "C++"]
+tags: ["ROS", "Gazebo", "SLAM", "3D Reconstruction", "Motion Planning", "Localization", "Sensor Fusion", "Python", "C++"]
 author: "Lechen Zhang"
 description: "Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth, 2022." 
 summary: "Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth" 
