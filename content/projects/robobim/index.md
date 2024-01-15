@@ -14,13 +14,13 @@ cover:
 
 ---
 
-##### Abstract
+## Abstract
 
 Traditional as-built Building Information Modeling (BIM) is a costly, time-consuming and dangerous task. The use of robotics technology to automate this task is promising and valuable research.
 
 ---
 
-##### Hardware
+## Hardware
 
 In order to achieve a robust, modular, and expandable design, the design of [Carter 2.0 from NVIDIA](https://docs.nvidia.com/isaac/archive/2021.1/doc/tutorials/carter_hardware.html) is referenced.
 
@@ -36,7 +36,7 @@ A sensor fusion system was designed to enable the acquisition of dense environme
 
 ---
 
-##### Software
+## Software
 
 The Software is built upon [ROS](https://www.ros.org/) and the simulation environment is built in [Gazebo](https://classic.gazebosim.org/).
 
@@ -48,7 +48,7 @@ The LiDAR Odometry and Mapping (LOAM) algorithm is modified from Ji Zhang's [ori
 
 ---
 
-##### Results
+## Results
 
 Some reconstruction results at Sir David and Lady Susan Greenaway Building (IAMET), UNNC.
 
@@ -62,13 +62,13 @@ Finalized Design.
 
 ---
 
-##### Credits
+## Credits
 
 This project was funded by a $15,000 grant from [Glodon](https://www.glodon.com/en/), a leading digital building platform service provider.
 
 ---
 
-##### Related material
+## Related material
 
 + [Presentation slides](presentation1.pdf)
 

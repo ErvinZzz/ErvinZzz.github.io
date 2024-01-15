@@ -70,8 +70,8 @@
   "keywords": [
     "CUDA", "Neural Networks", "Evolutionary Algorithm", "Soft Robot", "LLM"
   ],
-  "articleBody": " Overview CUDA-Accelerated Physics Simulation CUDA-Accelerated Implicit Encoding and Neural Evolution Large Language Model Supervision Results Related material Presentation slides ",
-  "wordCount" : "19",
+  "articleBody": " Overview CUDA-Accelerated Physics Simulation An optimized memory management strategy inspired by Boxi Xia’s work is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.\nEnergy Conservation Test for the simulator, shows the accuracy of the simulation.\nCUDA-Accelerated Implicit Encoding and Neural Evolution A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.\nThe matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.\nLarge Language Model Supervision Results Related material Presentation slides ",
+  "wordCount" : "100",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/soft.png","datePublished": "2023-12-01T00:00:00Z",
   "dateModified": "2023-12-01T00:00:00Z",
@@ -181,36 +181,41 @@
 </div>
   </header> 
   <div class="post-content"><hr>
-<h5 id="overview">Overview</h5>
+<h2 id="overview">Overview</h2>
 <p><img loading="lazy" src="soft1.png" alt=""  />
 </p>
 <hr>
-<h5 id="cuda-accelerated-physics-simulation">CUDA-Accelerated Physics Simulation</h5>
-<p><img loading="lazy" src="soft7.png" alt=""  />
-</p>
+<h2 id="cuda-accelerated-physics-simulation">CUDA-Accelerated Physics Simulation</h2>
+<p>An optimized memory management strategy inspired by Boxi Xia&rsquo;s <a href="https://github.com/boxiXia/FlexipodFast" target="_blank">work</a>
+ is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.</p>
 <p><img loading="lazy" src="soft9.png" alt=""  />
 </p>
+<p>Energy Conservation Test for the simulator, shows the accuracy of the simulation.</p>
+<p><img loading="lazy" src="soft7.png" alt=""  />
+</p>
 <hr>
-<h5 id="cuda-accelerated-implicit-encoding-and-neural-evolution">CUDA-Accelerated Implicit Encoding and Neural Evolution</h5>
+<h2 id="cuda-accelerated-implicit-encoding-and-neural-evolution">CUDA-Accelerated Implicit Encoding and Neural Evolution</h2>
+<p>A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.</p>
 <p><img loading="lazy" src="soft2.png" alt=""  />
 </p>
 <p><img loading="lazy" src="soft3.png" alt=""  />
 </p>
+<p>The matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.</p>
 <p><img loading="lazy" src="soft8.png" alt=""  />
 </p>
 <hr>
-<h5 id="large-language-model-supervision">Large Language Model Supervision</h5>
+<h2 id="large-language-model-supervision">Large Language Model Supervision</h2>
 <p><img loading="lazy" src="soft4.png" alt=""  />
 </p>
 <p><img loading="lazy" src="soft5.png" alt=""  />
 </p>
 <hr>
-<h5 id="results">Results</h5>
+<h2 id="results">Results</h2>
 <p><a href="https://youtu.be/dExNs8Zm6PI" target="_blank"><img loading="lazy" src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FdExNs8Zm6PI" alt="Demo Video"  />
 </a>
 </p>
 <hr>
-<h5 id="related-material">Related material</h5>
+<h2 id="related-material">Related material</h2>
 <ul>
 <li><a href="pre.pdf">Presentation slides</a>
 </li>

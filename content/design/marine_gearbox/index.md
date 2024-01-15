@@ -2,7 +2,7 @@
 title: "Marine Gearbox" 
 date: 2021-05-01
 tags: ["CAD"]
-author: "Lechen"
+author: "Lechen Zhang"
 description: "Marine Gearbox Design, 2021." 
 summary: "Marine Gearbox Design at University of Nottingham" 
 cover:

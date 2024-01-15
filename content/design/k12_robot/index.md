@@ -2,7 +2,7 @@
 title: "B-Bot: A K-12 STEM Education Modular Robot" 
 date: 2020-08-01
 tags: ["CAD", "Prototyping"]
-author: "Lechen"
+author: "Lechen Zhang"
 description: "Marine Gearbox Design, 2021." 
 summary: "Multi-Modal Robot Design During Internship at Beihang University" 
 cover:

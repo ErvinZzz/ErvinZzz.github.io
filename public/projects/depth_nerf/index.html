@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Depth Supervised Neural Radiance Fields | Lechen Zhang</title>
+<title>Incorporating Metric Depth Learning into Neural Radiance Fields | Lechen Zhang</title>
 <meta name="keywords" content="NeRF, Neural Networks, Python, TensorFlow, 3D Reconstruction, Deep Learning">
 <meta name="description" content="ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023.">
 <meta name="author" content="Lechen Zhang">
@@ -26,7 +26,7 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Depth Supervised Neural Radiance Fields" />
+</noscript><meta property="og:title" content="Incorporating Metric Depth Learning into Neural Radiance Fields" />
 <meta property="og:description" content="ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ErvinZzz.github.io/projects/depth_nerf/" />
@@ -36,7 +36,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://ErvinZzz.github.io/depth.gif" />
-<meta name="twitter:title" content="Depth Supervised Neural Radiance Fields"/>
+<meta name="twitter:title" content="Incorporating Metric Depth Learning into Neural Radiance Fields"/>
 <meta name="twitter:description" content="ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023."/>
 
 
@@ -54,7 +54,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Depth Supervised Neural Radiance Fields",
+      "name": "Incorporating Metric Depth Learning into Neural Radiance Fields",
       "item": "https://ErvinZzz.github.io/projects/depth_nerf/"
     }
   ]
@@ -64,14 +64,14 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Depth Supervised Neural Radiance Fields",
-  "name": "Depth Supervised Neural Radiance Fields",
+  "headline": "Incorporating Metric Depth Learning into Neural Radiance Fields",
+  "name": "Incorporating Metric Depth Learning into Neural Radiance Fields",
   "description": "ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023.",
   "keywords": [
     "NeRF", "Neural Networks", "Python", "TensorFlow", "3D Reconstruction", "Deep Learning"
   ],
-  "articleBody": " Abstract TODO\n",
-  "wordCount" : "2",
+  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_r+L_s+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults ",
+  "wordCount" : "115",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/depth.gif","datePublished": "2023-12-18T00:00:00Z",
   "dateModified": "2023-12-18T00:00:00Z",
@@ -174,15 +174,23 @@
   <header class="post-header">
     
     <h1 class="post-title">
-      Depth Supervised Neural Radiance Fields
+      Incorporating Metric Depth Learning into Neural Radiance Fields
     </h1>
     <div class="post-meta">&lt;span title=&#39;2023-12-18 00:00:00 &#43;0000 UTC&#39;&gt;December 2023&lt;/span&gt;&amp;nbsp;&amp;middot;&amp;nbsp;Lechen Zhang
 
 </div>
   </header> 
   <div class="post-content"><hr>
-<h5 id="abstract">Abstract</h5>
-<p>TODO</p>
+<h2 id="abstract">Abstract</h2>
+<p>Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.</p>
+<hr>
+<h2 id="overview-of-the-architecture">Overview of the Architecture</h2>
+<h2 id="loss-function">Loss Function</h2>
+<p>$$
+L=L_r+L_s+\lambda_dL_{Depth}
+$$
+where $\lambda_d$ represents the weight of $L_{Depth}$.</p>
+<h2 id="results">Results</h2>
 
   </div>
 

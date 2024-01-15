@@ -2,7 +2,7 @@
 title: "Water-Land Amphibious Vehicle" 
 date: 2021-06-01
 tags: ["CAD", "CFD", "Prototyping", "Manufacturing", "Laser Cutting", "3D Printing", "CNC"]
-author: "Lechen"
+author: "Lechen Zhang"
 description: "Water-Land Amphibious Vehicle Design, 2021." 
 summary: "Water-Land Amphibious Vehicle Design at University of Nottingham, Supervised by Prof. Adam Rushworth" 
 cover:
