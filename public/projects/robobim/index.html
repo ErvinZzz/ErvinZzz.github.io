@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>RoboBIM: An Autonomous Building Information Modelling System | Lechen Zhang</title>
-<meta name="keywords" content="ROS, Gazebo, SLAM, 3D Reconstruction, Motion Planning, Localization, Sensor Fusion, Python, C&#43;&#43;">
+<meta name="keywords" content="ROS, Gazebo, SLAM, 3D Reconstruction, Motion Planning, Localization, Sensor Fusion, Python, C&#43;&#43;, Simulation, URDF">
 <meta name="description" content="Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth, 2022.">
 <meta name="author" content="Lechen Zhang">
 <link rel="canonical" href="https://ErvinZzz.github.io/projects/robobim/">
@@ -68,7 +68,7 @@
   "name": "RoboBIM: An Autonomous Building Information Modelling System",
   "description": "Bachelor Thesis Project at University of Nottingham, Supervised by Prof. Adam Rushworth, 2022.",
   "keywords": [
-    "ROS", "Gazebo", "SLAM", "3D Reconstruction", "Motion Planning", "Localization", "Sensor Fusion", "Python", "C++"
+    "ROS", "Gazebo", "SLAM", "3D Reconstruction", "Motion Planning", "Localization", "Sensor Fusion", "Python", "C++", "Simulation", "URDF"
   ],
   "articleBody": " Abstract Traditional as-built Building Information Modeling (BIM) is a costly, time-consuming and dangerous task. The use of robotics technology to automate this task is promising and valuable research.\nHardware In order to achieve a robust, modular, and expandable design, the design of Carter 2.0 from NVIDIA is referenced.\nA sensor fusion system was designed to enable the acquisition of dense environmental point clouds while preventing perceptual degradation in indoor environments.\nSoftware The Software is built upon ROS and the simulation environment is built in Gazebo .\nThe LiDAR Odometry and Mapping (LOAM) algorithm is modified from Ji Zhang’s original implimentation . To make full use of the spinning LiDAR and the solid-state LiDAR, the front end is modified to support multi-LiDAR fusion with a calibration matrix. Besides, IMU data is used in the ICP (Iterative Closest Points) scan matching for better localization and mapping performance (especially in dealing with drift in z-axis).\nResults Some reconstruction results at Sir David and Lady Susan Greenaway Building (IAMET), UNNC.\nFinalized Design.\nCredits This project was funded by a $15,000 grant from Glodon , a leading digital building platform service provider.\nRelated material Presentation slides ",
   "wordCount" : "191",
@@ -241,6 +241,8 @@
       <li><a href="https://ErvinZzz.github.io/tags/sensor-fusion/">Sensor Fusion</a></li>
       <li><a href="https://ErvinZzz.github.io/tags/python/">Python</a></li>
       <li><a href="https://ErvinZzz.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/simulation/">Simulation</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/urdf/">URDF</a></li>
     </ul>
   </footer>
 </article>

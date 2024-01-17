@@ -37,13 +37,13 @@ where $\lambda_d$ represents the weight of $L_{Depth}$.
 
 ## Results
 
-Reconstructed model's depth map with depth learning prior:
+Reconstructed model's depth map with depth learning prior(Proposed):
 
 ![](withdepth.jpg)
 
-Reconstructed model's depth map without depth learning prior:
+Reconstructed model's depth map without depth learning prior(Original NeRF):
 
-![](withoutdepth.jpg)
+![](wtdepth.png)
 
 Final Rendering Results:
 

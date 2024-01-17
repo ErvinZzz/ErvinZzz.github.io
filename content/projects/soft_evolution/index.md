@@ -1,7 +1,7 @@
 ---
 title: "Implicit Neural Evolution with LLM Supervision"
 date: 2023-12-01
-tags: ["CUDA", "Neural Networks", "Evolutionary Algorithm", "Soft Robot", "LLM"]
+tags: ["CUDA", "Neural Networks", "Evolutionary Algorithm", "Soft Robot", "LLM", "C++", "Simulation"]
 author: ["Lechen Zhang"]
 description: "MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023." 
 summary: "MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson" 
@@ -26,7 +26,7 @@ An optimized memory management strategy inspired by Boxi Xia's [work](https://gi
 
 ![](soft9.png)
 
-Energy Conservation Test for the simulator, shows the accuracy of the simulation.
+The energy Conservation Test for the simulator shows the accuracy of the simulation.
 
 ![](soft7.png)
 
@@ -48,10 +48,10 @@ The matrix calculation for the forward propagation in the neural evolution is al
 
 ## Large Language Model Supervision
 
-The hyperparameter tunning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. 
+The hyperparameter tuning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. 
 ![](soft4.png)
 
-The experiment is conducted using GPT-4 Turbo API and the results shows that the diversity is better maintained.
+The experiment is conducted using GPT-4 Turbo API and the results show that the diversity is better maintained.
 
 ![](soft5.png)
 
