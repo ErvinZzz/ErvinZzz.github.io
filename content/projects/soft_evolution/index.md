@@ -48,7 +48,10 @@ The matrix calculation for the forward propagation in the neural evolution is al
 
 ## Large Language Model Supervision
 
+The hyperparameter tunning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like [GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. 
 ![](soft4.png)
+
+The experiment is conducted using GPT-4 Turbo API and the results shows that the diversity is better maintained.
 
 ![](soft5.png)
 
@@ -62,4 +65,5 @@ The matrix calculation for the forward propagation in the neural evolution is al
 
 ## Related material
 
++ [Code on Github](https://github.com/ErvinZzz/soft_evolution)
 + [Presentation slides](pre.pdf)

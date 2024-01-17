@@ -22,12 +22,31 @@ Neural radiance fields (NeRF) encode a scene into a neural representation that e
 
 ## Overview of the Architecture
 
+![](nerf.drawio.png)
+
+---
 
 ## Loss Function
+
 $$
 L=L_r+L_s+\lambda_dL_{Depth}
 $$
 where $\lambda_d$ represents the weight of $L_{Depth}$.
 
+---
+
 ## Results
+
+Reconstructed model's depth map with depth learning prior:
+
+![](withdepth.jpg)
+
+Reconstructed model's depth map without depth learning prior:
+
+![](withoutdepth.jpg)
+
+Final Rendering Results:
+
+![](depth_test.gif)
+
 

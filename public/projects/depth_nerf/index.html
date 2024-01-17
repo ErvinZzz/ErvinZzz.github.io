@@ -70,8 +70,8 @@
   "keywords": [
     "NeRF", "Neural Networks", "Python", "TensorFlow", "3D Reconstruction", "Deep Learning"
   ],
-  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_r+L_s+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults ",
-  "wordCount" : "115",
+  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_r+L_s+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults Reconstructed model’s depth map with depth learning prior:\nReconstructed model’s depth map without depth learning prior:\nFinal Rendering Results:\n",
+  "wordCount" : "134",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/depth.gif","datePublished": "2023-12-18T00:00:00Z",
   "dateModified": "2023-12-18T00:00:00Z",
@@ -185,12 +185,25 @@
 <p>Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.</p>
 <hr>
 <h2 id="overview-of-the-architecture">Overview of the Architecture</h2>
+<p><img loading="lazy" src="nerf.drawio.png" alt=""  />
+</p>
+<hr>
 <h2 id="loss-function">Loss Function</h2>
 <p>$$
 L=L_r+L_s+\lambda_dL_{Depth}
 $$
 where $\lambda_d$ represents the weight of $L_{Depth}$.</p>
+<hr>
 <h2 id="results">Results</h2>
+<p>Reconstructed model&rsquo;s depth map with depth learning prior:</p>
+<p><img loading="lazy" src="withdepth.jpg" alt=""  />
+</p>
+<p>Reconstructed model&rsquo;s depth map without depth learning prior:</p>
+<p><img loading="lazy" src="withoutdepth.jpg" alt=""  />
+</p>
+<p>Final Rendering Results:</p>
+<p><img loading="lazy" src="depth_test.gif" alt=""  />
+</p>
 
   </div>
 

@@ -70,8 +70,8 @@
   "keywords": [
     "CUDA", "Neural Networks", "Evolutionary Algorithm", "Soft Robot", "LLM"
   ],
-  "articleBody": " Overview CUDA-Accelerated Physics Simulation An optimized memory management strategy inspired by Boxi Xia’s work is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.\nEnergy Conservation Test for the simulator, shows the accuracy of the simulation.\nCUDA-Accelerated Implicit Encoding and Neural Evolution A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.\nThe matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.\nLarge Language Model Supervision Results Related material Presentation slides ",
-  "wordCount" : "100",
+  "articleBody": " Overview CUDA-Accelerated Physics Simulation An optimized memory management strategy inspired by Boxi Xia’s work is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.\nEnergy Conservation Test for the simulator, shows the accuracy of the simulation.\nCUDA-Accelerated Implicit Encoding and Neural Evolution A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.\nThe matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.\nLarge Language Model Supervision The hyperparameter tunning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like GPT-4 Turbo provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. The experiment is conducted using GPT-4 Turbo API and the results shows that the diversity is better maintained.\nResults Related material Code on Github Presentation slides ",
+  "wordCount" : "172",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/soft.png","datePublished": "2023-12-01T00:00:00Z",
   "dateModified": "2023-12-01T00:00:00Z",
@@ -205,8 +205,11 @@
 </p>
 <hr>
 <h2 id="large-language-model-supervision">Large Language Model Supervision</h2>
-<p><img loading="lazy" src="soft4.png" alt=""  />
+<p>The hyperparameter tunning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like <a href="https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo" target="_blank">GPT-4 Turbo</a>
+ provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically.
+<img loading="lazy" src="soft4.png" alt=""  />
 </p>
+<p>The experiment is conducted using GPT-4 Turbo API and the results shows that the diversity is better maintained.</p>
 <p><img loading="lazy" src="soft5.png" alt=""  />
 </p>
 <hr>
@@ -217,6 +220,8 @@
 <hr>
 <h2 id="related-material">Related material</h2>
 <ul>
+<li><a href="https://github.com/ErvinZzz/soft_evolution" target="_blank">Code on Github</a>
+</li>
 <li><a href="pre.pdf">Presentation slides</a>
 </li>
 </ul>
