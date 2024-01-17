@@ -70,7 +70,7 @@
   "keywords": [
     "NeRF", "Neural Networks", "Python", "TensorFlow", "3D Reconstruction", "Deep Learning"
   ],
-  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_r+L_s+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults Reconstructed model’s depth map with depth learning prior(Proposed):\nReconstructed model’s depth map without depth learning prior(Original NeRF):\nFinal Rendering Results:\n",
+  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_{rgb}r+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults Reconstructed model’s depth map with depth learning prior(Proposed):\nReconstructed model’s depth map without depth learning prior(Original NeRF):\nFinal Rendering Results:\n",
   "wordCount" : "135",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/depth.gif","datePublished": "2023-12-18T00:00:00Z",
@@ -190,7 +190,7 @@
 <hr>
 <h2 id="loss-function">Loss Function</h2>
 <p>$$
-L=L_r+L_s+\lambda_dL_{Depth}
+L=L_{rgb}r+\lambda_dL_{Depth}
 $$
 where $\lambda_d$ represents the weight of $L_{Depth}$.</p>
 <hr>
