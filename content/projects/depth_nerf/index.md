@@ -29,7 +29,7 @@ Neural radiance fields (NeRF) encode a scene into a neural representation that e
 ## Loss Function
 
 $$
-L=L_r+L_s+\lambda_dL_{Depth}
+L=L_rgb+\lambda_dL_{Depth}
 $$
 where $\lambda_d$ represents the weight of $L_{Depth}$.
 
