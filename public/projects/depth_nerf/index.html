@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Incorporating Metric Depth Learning into Neural Radiance Fields | Lechen Zhang</title>
 <meta name="keywords" content="NeRF, Neural Networks, Python, TensorFlow, 3D Reconstruction, Deep Learning">
-<meta name="description" content="ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023.">
+<meta name="description" content="ECBM 4040 Course Project at Columbia University, 2023.">
 <meta name="author" content="Lechen Zhang">
 <link rel="canonical" href="https://ErvinZzz.github.io/projects/depth_nerf/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6f39f52dfb95ec8d899e82204ff143285499dec7c64e0320b01e7e1c94be7e2a.css" integrity="sha256-bzn1LfuV7I2JnoIgT/FDKFSZ3sfGTgMgsB5&#43;HJS&#43;fio=" rel="preload stylesheet" as="style">
@@ -27,7 +27,7 @@
 
     </style>
 </noscript><meta property="og:title" content="Incorporating Metric Depth Learning into Neural Radiance Fields" />
-<meta property="og:description" content="ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023." />
+<meta property="og:description" content="ECBM 4040 Course Project at Columbia University, 2023." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ErvinZzz.github.io/projects/depth_nerf/" />
 <meta property="og:image" content="https://ErvinZzz.github.io/depth.gif" /><meta property="article:section" content="projects" />
@@ -37,7 +37,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://ErvinZzz.github.io/depth.gif" />
 <meta name="twitter:title" content="Incorporating Metric Depth Learning into Neural Radiance Fields"/>
-<meta name="twitter:description" content="ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023."/>
+<meta name="twitter:description" content="ECBM 4040 Course Project at Columbia University, 2023."/>
 
 
 <script type="application/ld+json">
@@ -66,11 +66,11 @@
   "@type": "BlogPosting",
   "headline": "Incorporating Metric Depth Learning into Neural Radiance Fields",
   "name": "Incorporating Metric Depth Learning into Neural Radiance Fields",
-  "description": "ECBM 4040 Course Project at Columbia University, Supervised by Prof. Zoran Kostić, 2023.",
+  "description": "ECBM 4040 Course Project at Columbia University, 2023.",
   "keywords": [
     "NeRF", "Neural Networks", "Python", "TensorFlow", "3D Reconstruction", "Deep Learning"
   ],
-  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_{rgb}r+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults Reconstructed model’s depth map with depth learning prior(Proposed):\nReconstructed model’s depth map without depth learning prior(Original NeRF):\nFinal Rendering Results:\n",
+  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_{rgb}+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults Reconstructed model’s depth map with depth learning prior(Proposed):\nReconstructed model’s depth map without depth learning prior(Original NeRF):\nFinal Rendering Results:\n",
   "wordCount" : "135",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/depth.gif","datePublished": "2023-12-18T00:00:00Z",
@@ -190,7 +190,7 @@
 <hr>
 <h2 id="loss-function">Loss Function</h2>
 <p>$$
-L=L_{rgb}r+\lambda_dL_{Depth}
+L=L_{rgb}+\lambda_dL_{Depth}
 $$
 where $\lambda_d$ represents the weight of $L_{Depth}$.</p>
 <hr>
