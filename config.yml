@@ -61,12 +61,12 @@ params:
           buttons:
             - name: CV
               url: /cv.pdf
+            - name: Papers
+              url: /papers/
             - name: Projects
               url: /projects/
             - name: Design
               url: /design/
-            - name: Code
-              url: /code/
             - name: Tags
               url: /tags/
             - name: Archive
