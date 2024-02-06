@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/urdf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RRT-Connect Algorithm for Manipulation Motion Planning</title>
-      <link>https://ErvinZzz.github.io/code/rrt_connect/</link>
+      <link>https://ErvinZzz.github.io/projects/rrt_connect/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ErvinZzz.github.io/code/rrt_connect/</guid>
+      <guid>https://ErvinZzz.github.io/projects/rrt_connect/</guid>
       <description>Manipulation Motion Planning, 2023.</description>
     </item>
     

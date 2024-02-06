@@ -17,14 +17,14 @@ menu:
         - name: CV
           url: cv.pdf
           weight: 2
+        - name: Papers
+          url: /papers/
+          weight: 3
         - name: Projects
           url: /projects/
-          weight: 3
+          weight: 4
         - name: Design
           url: /design/
-          weight: 4
-        - name: Code
-          url: /code/
           weight: 5
 
 params:

@@ -53,13 +53,10 @@
     <loc>https://ErvinZzz.github.io/tags/soft-robot/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/code/2048/</loc>
+    <loc>https://ErvinZzz.github.io/projects/2048/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/adversarial-search/</loc>
-    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/code/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/motion-planning/</loc>
@@ -68,7 +65,7 @@
     <loc>https://ErvinZzz.github.io/tags/ros/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/code/rrt_connect/</loc>
+    <loc>https://ErvinZzz.github.io/projects/rrt_connect/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/urdf/</loc>
@@ -123,5 +120,7 @@
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/archive/</loc>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/papers/</loc>
   </url>
 </urlset>
