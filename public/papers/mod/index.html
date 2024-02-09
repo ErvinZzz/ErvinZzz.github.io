@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Incorporating Metric Depth Learning into Neural Radiance Fields | Lechen Zhang</title>
-<meta name="keywords" content="Neural Rendering, Neural Networks, Python, TensorFlow, 3D Reconstruction, Deep Learning">
-<meta name="description" content="ECBM 4040 Course Project at Columbia University, 2023.">
-<meta name="author" content="Lechen Zhang">
-<link rel="canonical" href="https://ErvinZzz.github.io/projects/depth_nerf/">
+<title>MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction | Lechen Zhang</title>
+<meta name="keywords" content="Neural Rendering, Neural Networks, Python, Pytorch, SLAM, 3D Reconstruction, Deep Learning">
+<meta name="description" content="Mono Neural SLAM, 2024.">
+<meta name="author" content=" ">
+<link rel="canonical" href="https://ErvinZzz.github.io/papers/mod/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6f39f52dfb95ec8d899e82204ff143285499dec7c64e0320b01e7e1c94be7e2a.css" integrity="sha256-bzn1LfuV7I2JnoIgT/FDKFSZ3sfGTgMgsB5&#43;HJS&#43;fio=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://ErvinZzz.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://ErvinZzz.github.io/favicon-16x16.png">
@@ -26,18 +26,18 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Incorporating Metric Depth Learning into Neural Radiance Fields" />
-<meta property="og:description" content="ECBM 4040 Course Project at Columbia University, 2023." />
+</noscript><meta property="og:title" content="MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction" />
+<meta property="og:description" content="Mono Neural SLAM, 2024." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ErvinZzz.github.io/projects/depth_nerf/" />
-<meta property="og:image" content="https://ErvinZzz.github.io/depth.gif" /><meta property="article:section" content="projects" />
-<meta property="article:published_time" content="2023-12-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-12-18T00:00:00+00:00" />
+<meta property="og:url" content="https://ErvinZzz.github.io/papers/mod/" />
+<meta property="og:image" content="https://ErvinZzz.github.io/mod.png" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2024-02-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-06T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://ErvinZzz.github.io/depth.gif" />
-<meta name="twitter:title" content="Incorporating Metric Depth Learning into Neural Radiance Fields"/>
-<meta name="twitter:description" content="ECBM 4040 Course Project at Columbia University, 2023."/>
+<meta name="twitter:image" content="https://ErvinZzz.github.io/mod.png" />
+<meta name="twitter:title" content="MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction"/>
+<meta name="twitter:description" content="Mono Neural SLAM, 2024."/>
 
 
 <script type="application/ld+json">
@@ -48,14 +48,14 @@
     {
       "@type": "ListItem",
       "position":  1 ,
-      "name": "Projects",
-      "item": "https://ErvinZzz.github.io/projects/"
+      "name": "Papers",
+      "item": "https://ErvinZzz.github.io/papers/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Incorporating Metric Depth Learning into Neural Radiance Fields",
-      "item": "https://ErvinZzz.github.io/projects/depth_nerf/"
+      "name": "MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction",
+      "item": "https://ErvinZzz.github.io/papers/mod/"
     }
   ]
 }
@@ -64,24 +64,24 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Incorporating Metric Depth Learning into Neural Radiance Fields",
-  "name": "Incorporating Metric Depth Learning into Neural Radiance Fields",
-  "description": "ECBM 4040 Course Project at Columbia University, 2023.",
+  "headline": "MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction",
+  "name": "MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction",
+  "description": "Mono Neural SLAM, 2024.",
   "keywords": [
-    "Neural Rendering", "Neural Networks", "Python", "TensorFlow", "3D Reconstruction", "Deep Learning"
+    "Neural Rendering", "Neural Networks", "Python", "Pytorch", "SLAM", "3D Reconstruction", "Deep Learning"
   ],
-  "articleBody": " Abstract Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.\nOverview of the Architecture Loss Function $$ L=L_{rgb}+\\lambda_dL_{Depth} $$ where $\\lambda_d$ represents the weight of $L_{Depth}$.\nResults Reconstructed model’s depth map with depth learning prior(Proposed):\nReconstructed model’s depth map without depth learning prior(Original NeRF):\nFinal Rendering Results:\n",
-  "wordCount" : "135",
+  "articleBody": " Abstract Neural implicit representations have recently been demonstrated in many fields including Simultaneous Localization And Mapping (SLAM). Current neural SLAM can achieve ideal results in reconstructing bounded scenes, but this relies on the input of RGB-D images. Neural-based SLAM based only on RGB images is unable to reconstruct the scale of the scene accurately, and it also suffers from scale drift due to errors accumulated during tracking. To overcome these limitations, we present MoD-SLAM, a monocular dense mapping method that allows global pose optimization and 3D reconstruction in real-time in unbounded scenes. Optimizing scene reconstruction by monocular depth estimation and using loop closure detection to update camera pose enable detailed and precise reconstruction on large scenes. Compared to previous work, our approach is more robust, scalable and versatile. Our experiments demonstrate that MoD-SLAM has more excellent mapping performance than prior neural SLAM methods, especially in large borderless scenes.\nPreview Link Arxiv ",
+  "wordCount" : "151",
   "inLanguage": "en",
-  "image":"https://ErvinZzz.github.io/depth.gif","datePublished": "2023-12-18T00:00:00Z",
-  "dateModified": "2023-12-18T00:00:00Z",
-  "author":[{
+  "image":"https://ErvinZzz.github.io/mod.png","datePublished": "2024-02-06T00:00:00Z",
+  "dateModified": "2024-02-06T00:00:00Z",
+  "author":{
     "@type": "Person",
-    "name": "Lechen Zhang"
-  }],
+    "name": " "
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://ErvinZzz.github.io/projects/depth_nerf/"
+    "@id": "https://ErvinZzz.github.io/papers/mod/"
   },
   "publisher": {
     "@type": "Organization",
@@ -174,35 +174,18 @@
   <header class="post-header">
     
     <h1 class="post-title">
-      Incorporating Metric Depth Learning into Neural Radiance Fields
+      MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction
     </h1>
-    <div class="post-meta">&lt;span title=&#39;2023-12-18 00:00:00 &#43;0000 UTC&#39;&gt;December 2023&lt;/span&gt;&amp;nbsp;&amp;middot;&amp;nbsp;Lechen Zhang
+    <div class="post-meta">&lt;span title=&#39;2024-02-06 00:00:00 &#43;0000 UTC&#39;&gt;February 2024&lt;/span&gt;&amp;nbsp;&amp;middot;&amp;nbsp; 
 
 </div>
   </header> 
   <div class="post-content"><hr>
 <h2 id="abstract">Abstract</h2>
-<p>Neural radiance fields (NeRF) encode a scene into a neural representation that enables photo-realistic rendering of novel views. Neural However, a successful reconstruction from RGB images requires a large number of input views taken under static conditions — typically up to a few hundred images for room-size scenes, and the prediction of volume density is usually not as accurate as the RGB, which leads to ghostly artifact issues. To address this issue, a metric depth learning module is incorporated with the classic NeRF framework to leverage the depth prior for faster training speed and better rendering quality.</p>
+<p>Neural implicit representations have recently been demonstrated in many fields including Simultaneous Localization And Mapping (SLAM). Current neural SLAM can achieve ideal results in reconstructing bounded scenes, but this relies on the input of RGB-D images. Neural-based SLAM based only on RGB images is unable to reconstruct the scale of the scene accurately, and it also suffers from scale drift due to errors accumulated during tracking. To overcome these limitations, we present MoD-SLAM, a monocular dense mapping method that allows global pose optimization and 3D reconstruction in real-time in unbounded scenes. Optimizing scene reconstruction by monocular depth estimation and using loop closure detection to update camera pose enable detailed and precise reconstruction on large scenes. Compared to previous work, our approach is more robust, scalable and versatile. Our experiments demonstrate that MoD-SLAM has more excellent mapping performance than prior neural SLAM methods, especially in large borderless scenes.</p>
 <hr>
-<h2 id="overview-of-the-architecture">Overview of the Architecture</h2>
-<p><img loading="lazy" src="nerf.drawio.png" alt=""  />
-</p>
-<hr>
-<h2 id="loss-function">Loss Function</h2>
-<p>$$
-L=L_{rgb}+\lambda_dL_{Depth}
-$$
-where $\lambda_d$ represents the weight of $L_{Depth}$.</p>
-<hr>
-<h2 id="results">Results</h2>
-<p>Reconstructed model&rsquo;s depth map with depth learning prior(Proposed):</p>
-<p><img loading="lazy" src="withdepth.jpg" alt=""  />
-</p>
-<p>Reconstructed model&rsquo;s depth map without depth learning prior(Original NeRF):</p>
-<p><img loading="lazy" src="wtdepth.png" alt=""  />
-</p>
-<p>Final Rendering Results:</p>
-<p><img loading="lazy" src="depth_test.gif" alt=""  />
+<h2 id="preview-link">Preview Link</h2>
+<p><a href="https://arxiv.org/abs/2402.03762" target="_blank">Arxiv</a>
 </p>
 
   </div>
@@ -212,7 +195,8 @@ where $\lambda_d$ represents the weight of $L_{Depth}$.</p>
       <li><a href="https://ErvinZzz.github.io/tags/neural-rendering/">Neural Rendering</a></li>
       <li><a href="https://ErvinZzz.github.io/tags/neural-networks/">Neural Networks</a></li>
       <li><a href="https://ErvinZzz.github.io/tags/python/">Python</a></li>
-      <li><a href="https://ErvinZzz.github.io/tags/tensorflow/">TensorFlow</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/pytorch/">Pytorch</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/slam/">SLAM</a></li>
       <li><a href="https://ErvinZzz.github.io/tags/3d-reconstruction/">3D Reconstruction</a></li>
       <li><a href="https://ErvinZzz.github.io/tags/deep-learning/">Deep Learning</a></li>
     </ul>

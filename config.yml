@@ -53,7 +53,7 @@ params:
     profileMode:
           enabled: true
           title: Lechen Zhang
-          subtitle: "I am Lechen Zhang(张乐晨), graduate student in Mechanical Engineering at Columbia University. My research intersets are in Robotics, Machine Intellegence and Computer Vision."
+          subtitle: "I am Lechen Zhang(张乐晨), graduate student in Mechanical Engineering at Columbia University. I am currently work as graduate research asistant at Creative Machines Lab, supervised by Prof. Hod Lipson. My research intersets are in Robotics, Machine Intellegence and Computer Vision."
           imageUrl: "pic.png"
           imageWidth: 160
           imageHeight: 160

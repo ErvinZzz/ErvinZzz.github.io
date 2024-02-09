@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Lechen Zhang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://ErvinZzz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>3D Reconstruction</title>
       <link>https://ErvinZzz.github.io/tags/3d-reconstruction/</link>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/tags/3d-reconstruction/</guid>
       <description></description>
@@ -19,36 +19,54 @@
     <item>
       <title>Deep Learning</title>
       <link>https://ErvinZzz.github.io/tags/deep-learning/</link>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>NeRF</title>
-      <link>https://ErvinZzz.github.io/tags/nerf/</link>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/nerf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Neural Networks</title>
       <link>https://ErvinZzz.github.io/tags/neural-networks/</link>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/tags/neural-networks/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Neural Rendering</title>
+      <link>https://ErvinZzz.github.io/tags/neural-rendering/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/neural-rendering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>https://ErvinZzz.github.io/tags/python/</link>
-      <pubDate>Mon, 18 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pytorch</title>
+      <link>https://ErvinZzz.github.io/tags/pytorch/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SLAM</title>
+      <link>https://ErvinZzz.github.io/tags/slam/</link>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/tags/slam/</guid>
       <description></description>
     </item>
     
@@ -175,15 +193,6 @@
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ErvinZzz.github.io/tags/sensor-fusion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SLAM</title>
-      <link>https://ErvinZzz.github.io/tags/slam/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ErvinZzz.github.io/tags/slam/</guid>
       <description></description>
     </item>
     

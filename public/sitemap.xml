@@ -3,30 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ErvinZzz.github.io/tags/3d-reconstruction/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/deep-learning/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/papers/mod/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/neural-networks/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/neural-rendering/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/papers/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/python/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/pytorch/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/slam/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ErvinZzz.github.io/tags/</loc>
+    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/projects/depth_nerf/</loc>
     <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/nerf/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/neural-networks/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ErvinZzz.github.io/projects/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/python/</loc>
-    <lastmod>2023-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/tags/</loc>
     <lastmod>2023-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/tags/tensorflow/</loc>
@@ -83,9 +95,6 @@
     <loc>https://ErvinZzz.github.io/tags/sensor-fusion/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ErvinZzz.github.io/tags/slam/</loc>
-    <lastmod>2022-06-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ErvinZzz.github.io/tags/3d-printing/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -120,7 +129,5 @@
     <lastmod>2020-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ErvinZzz.github.io/archive/</loc>
-  </url><url>
-    <loc>https://ErvinZzz.github.io/papers/</loc>
   </url>
 </urlset>
