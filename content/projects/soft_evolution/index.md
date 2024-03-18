@@ -32,7 +32,7 @@ The energy Conservation Test for the simulator shows the accuracy of the simulat
 
 ---
 
-## CUDA-Accelerated Implicit Encoding and Neural Evolution
+## Implicit Encoding and Neural Evolution
 
 A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control. 
 
@@ -40,11 +40,18 @@ A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot m
 
 ![](soft3.png)
 
+---
+
+## Positional Encoding
+
 Utilized the Positional Encoding mechanism to embed spatial information into the MLP, helps the model better understand the morphology of the robot.
 
 ![](pe.gif)
 ![](soft10.jpg)
 
+---
+
+## CUDA-Accelerated Neural Network Operation
 The matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.
 
 ![](soft8.png)
