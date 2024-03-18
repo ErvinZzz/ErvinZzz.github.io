@@ -70,8 +70,8 @@
   "keywords": [
     "CUDA", "Neural Networks", "Evolutionary Algorithm", "Soft Robot", "LLM", "C++", "Simulation"
   ],
-  "articleBody": " Overview CUDA-Accelerated Physics Simulation An optimized memory management strategy inspired by Boxi Xia’s work is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.\nThe energy Conservation Test for the simulator shows the accuracy of the simulation.\nCUDA-Accelerated Implicit Encoding and Neural Evolution A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.\nThe matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.\nLarge Language Model Supervision The hyperparameter tuning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like GPT-4 Turbo provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. The experiment is conducted using GPT-4 Turbo API and the results show that the diversity is better maintained.\nResults Related material Code on Github Presentation slides ",
-  "wordCount" : "173",
+  "articleBody": " Overview CUDA-Accelerated Physics Simulation An optimized memory management strategy inspired by Boxi Xia’s work is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.\nThe energy Conservation Test for the simulator shows the accuracy of the simulation.\nCUDA-Accelerated Implicit Encoding and Neural Evolution A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.\nUtilized the Positional Encoding mechanism to embed spatial information into the MLP, helps the model better understand the morphology of the robot.\nThe matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.\nLarge Language Model Supervision The hyperparameter tuning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like GPT-4 Turbo provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. The experiment is conducted using GPT-4 Turbo API and the results show that the diversity is better maintained.\nResults Related material Code on Github Presentation slides ",
+  "wordCount" : "195",
   "inLanguage": "en",
   "image":"https://ErvinZzz.github.io/soft.png","datePublished": "2023-12-01T00:00:00Z",
   "dateModified": "2023-12-01T00:00:00Z",
@@ -199,6 +199,11 @@
 <p><img loading="lazy" src="soft2.png" alt=""  />
 </p>
 <p><img loading="lazy" src="soft3.png" alt=""  />
+</p>
+<p>Utilized the Positional Encoding mechanism to embed spatial information into the MLP, helps the model better understand the morphology of the robot.</p>
+<p><img loading="lazy" src="pe.gif" alt=""  />
+
+<img loading="lazy" src="soft10.jpg" alt=""  />
 </p>
 <p>The matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.</p>
 <p><img loading="lazy" src="soft8.png" alt=""  />
