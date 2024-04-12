@@ -16,5 +16,14 @@
       <description>Mono Neural SLAM, 2024.</description>
     </item>
     
+    <item>
+      <title>Implicit Neural Evolution with LLM Supervision</title>
+      <link>https://ErvinZzz.github.io/papers/soft_evolution/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ErvinZzz.github.io/papers/soft_evolution/</guid>
+      <description>MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023.</description>
+    </item>
+    
   </channel>
 </rss>

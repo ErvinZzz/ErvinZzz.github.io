@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Implicit Neural Evolution with LLM Supervision | Lechen Zhang</title>
+<meta name="keywords" content="CUDA, Neural Networks, Evolutionary Algorithm, Soft Robot, LLM, C&#43;&#43;, Simulation">
+<meta name="description" content="MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023.">
+<meta name="author" content="Lechen Zhang">
+<link rel="canonical" href="https://ErvinZzz.github.io/papers/soft_evolution/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6f39f52dfb95ec8d899e82204ff143285499dec7c64e0320b01e7e1c94be7e2a.css" integrity="sha256-bzn1LfuV7I2JnoIgT/FDKFSZ3sfGTgMgsB5&#43;HJS&#43;fio=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://ErvinZzz.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ErvinZzz.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ErvinZzz.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://ErvinZzz.github.io/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Implicit Neural Evolution with LLM Supervision" />
+<meta property="og:description" content="MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ErvinZzz.github.io/papers/soft_evolution/" />
+<meta property="og:image" content="https://ErvinZzz.github.io/soft.svg" /><meta property="article:section" content="papers" />
+<meta property="article:published_time" content="2023-12-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-12-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://ErvinZzz.github.io/soft.svg" />
+<meta name="twitter:title" content="Implicit Neural Evolution with LLM Supervision"/>
+<meta name="twitter:description" content="MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Papers",
+      "item": "https://ErvinZzz.github.io/papers/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Implicit Neural Evolution with LLM Supervision",
+      "item": "https://ErvinZzz.github.io/papers/soft_evolution/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Implicit Neural Evolution with LLM Supervision",
+  "name": "Implicit Neural Evolution with LLM Supervision",
+  "description": "MECS 4510 Course Project at Columbia University, Supervised by Prof. Hod Lipson, 2023.",
+  "keywords": [
+    "CUDA", "Neural Networks", "Evolutionary Algorithm", "Soft Robot", "LLM", "C++", "Simulation"
+  ],
+  "articleBody": " Overview CUDA-Accelerated Physics Simulation An optimized memory management strategy inspired by Boxi Xia’s work is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.\nThe energy Conservation Test for the simulator shows the accuracy of the simulation.\nImplicit Encoding and Neural Evolution A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.\nPositional Encoding Utilized the Positional Encoding mechanism to embed spatial information into the MLP, helps the model better understand the morphology of the robot.\nCUDA-Accelerated Neural Network Operation The matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.\nLarge Language Model Supervision The hyperparameter tuning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like GPT-4 Turbo provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically. The experiment is conducted using GPT-4 Turbo API and the results show that the diversity is better maintained.\nResults Related material Code on Github Presentation slides ",
+  "wordCount" : "200",
+  "inLanguage": "en",
+  "image":"https://ErvinZzz.github.io/soft.svg","datePublished": "2023-12-01T00:00:00Z",
+  "dateModified": "2023-12-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Lechen Zhang"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ErvinZzz.github.io/papers/soft_evolution/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lechen Zhang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ErvinZzz.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://ErvinZzz.github.io/" accesskey="h" title="Lechen Zhang">
+             
+                <img src="https://ErvinZzz.github.io/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Lechen Zhang</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://ErvinZzz.github.io/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/cv.pdf" title="CV">
+                    <span>CV</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ErvinZzz.github.io/design/" title="Design">
+                    <span>Design</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Implicit Neural Evolution with LLM Supervision
+    </h1>
+    <div class="post-meta">&lt;span title=&#39;2023-12-01 00:00:00 &#43;0000 UTC&#39;&gt;December 2023&lt;/span&gt;&amp;nbsp;&amp;middot;&amp;nbsp;Lechen Zhang
+
+</div>
+  </header> 
+  <div class="post-content"><hr>
+<h2 id="overview">Overview</h2>
+<p><img loading="lazy" src="soft1.svg" alt=""  />
+</p>
+<hr>
+<h2 id="cuda-accelerated-physics-simulation">CUDA-Accelerated Physics Simulation</h2>
+<p>An optimized memory management strategy inspired by Boxi Xia&rsquo;s <a href="https://github.com/boxiXia/FlexipodFast" target="_blank">work</a>
+ is utilized to accelerate the physics simulation. The property array of the struct is allocated separately in GPU, which enables more efficient memory management and lower memory consumption.</p>
+<p><img loading="lazy" src="soft9.png" alt=""  />
+</p>
+<p>The energy Conservation Test for the simulator shows the accuracy of the simulation.</p>
+<p><img loading="lazy" src="soft7.png" alt=""  />
+</p>
+<hr>
+<h2 id="implicit-encoding-and-neural-evolution">Implicit Encoding and Neural Evolution</h2>
+<p>A Multi-Layer Perceptron (MLP) is utilized to implicitly encode the soft robot morphology and control.</p>
+<p><img loading="lazy" src="soft2.png" alt=""  />
+</p>
+<p><img loading="lazy" src="soft3.png" alt=""  />
+</p>
+<hr>
+<h2 id="positional-encoding">Positional Encoding</h2>
+<p>Utilized the Positional Encoding mechanism to embed spatial information into the MLP, helps the model better understand the morphology of the robot.</p>
+<p><img loading="lazy" src="pe.gif" alt=""  />
+</p>
+<hr>
+<h2 id="cuda-accelerated-neural-network-operation">CUDA-Accelerated Neural Network Operation</h2>
+<p>The matrix calculation for the forward propagation in the neural evolution is also accelerated by CUDA.</p>
+<p><img loading="lazy" src="soft8.png" alt=""  />
+</p>
+<hr>
+<h2 id="large-language-model-supervision">Large Language Model Supervision</h2>
+<p>The hyperparameter tuning for the evolutionary algorithm is considered a time-consuming problem. However, the recent Large Language Models (LLMs) like <a href="https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo" target="_blank">GPT-4 Turbo</a>
+ provide a huge context window that enables the possibility of using LLMs to supervise the evolution process of the evolution algorithm and adjust the hyperparameter of the EAs dynamically.
+<img loading="lazy" src="soft4.png" alt=""  />
+</p>
+<p>The experiment is conducted using GPT-4 Turbo API and the results show that the diversity is better maintained.</p>
+<p><img loading="lazy" src="soft5.png" alt=""  />
+</p>
+<hr>
+<h2 id="results">Results</h2>
+<p><a href="https://youtu.be/dExNs8Zm6PI" target="_blank"><img loading="lazy" src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FdExNs8Zm6PI" alt="Demo Video"  />
+</a>
+</p>
+<hr>
+<h2 id="related-material">Related material</h2>
+<ul>
+<li><a href="https://github.com/ErvinZzz/soft_evolution" target="_blank">Code on Github</a>
+</li>
+<li><a href="pre.pdf">Presentation slides</a>
+</li>
+</ul>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://ErvinZzz.github.io/tags/cuda/">CUDA</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/neural-networks/">Neural Networks</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/evolutionary-algorithm/">Evolutionary Algorithm</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/soft-robot/">Soft Robot</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/llm/">LLM</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a></li>
+      <li><a href="https://ErvinZzz.github.io/tags/simulation/">Simulation</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>
