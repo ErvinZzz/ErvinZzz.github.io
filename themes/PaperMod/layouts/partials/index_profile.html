@@ -53,6 +53,9 @@
             {{- end }}
         </div>
         {{- end }}
-    </div>
-    {{- end}}
+        
+        <div class="profile-updates">
+            <span>{{ .updates | markdownify }}</span>
+        </div>
+        {{- end }}
 </div>
