@@ -54,7 +54,7 @@ params:
     profileMode:
           enabled: true
           title: Lechen Zhang
-          subtitle: <br>I am Lechen Zhang, graduate student in Mechanical Engineering at [<u>Columbia University.</u>](https://www.columbia.edu/) I am currently work as graduate research asistant at [<u>Creative Machines Lab,</u>](https://www.creativemachineslab.com/) supervised by [<u>Hod Lipson.</u>](https://scholar.google.com/citations?user=F_Go4V4AAAAJ&hl=en). <br> <br>
+          subtitle: <br>I am Lechen Zhang, graduate student in Mechanical Engineering at [<u>Columbia University.</u>](https://www.columbia.edu/) I am currently work as graduate research asistant at [<u>Creative Machines Lab,</u>](https://www.creativemachineslab.com/) supervised by [<u>Hod Lipson.</u>](https://scholar.google.com/citations?user=F_Go4V4AAAAJ&hl=en) <br> <br>
           imageUrl: "pic.png"
           imageWidth: 160
           imageHeight: 160
