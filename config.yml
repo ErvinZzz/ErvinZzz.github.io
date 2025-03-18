@@ -8,7 +8,6 @@ enableRobotsTXT: true
 
 taxonomies:
     tag: tags
-
 menu:
     main:
         - name: Home
@@ -77,7 +76,7 @@ params:
                   <h2 style="color: #4a9eff; font-style: italic;">Recent Updates:</h2>
                   <br>
                   <div style="color: #666666; font-style: italic;">
-                    • <a href="https://autourdf.github.io">One paper</a> - Accepted by CVPR 2025 (Acceptance Rate: 22.1%) &nbsp;&nbsp;<span style="color: #808080; font-size: 0.9em; border: 1px solid #ddd; padding: 2px 6px; border-radius: 3px;">Feb 2025</span><br>
+                    • <a href="https://jl6017.github.io/AutoURDF/">One paper</a> - Accepted by CVPR 2025 (Acceptance Rate: 22.1%) &nbsp;&nbsp;<span style="color: #808080; font-size: 0.9em; border: 1px solid #ddd; padding: 2px 6px; border-radius: 3px;">Feb 2025</span><br>
                     • <a href="https://arxiv.org/abs/2402.03762">One paper</a> - Accepted by IEEE Robotics and Automation Letters (RA-L) &nbsp;&nbsp;<span style="color: #808080; font-size: 0.9em; border: 1px solid #ddd; padding: 2px 6px; border-radius: 3px;">Oct 2024</span><br>
                     • <a href="https://arxiv.org/abs/2405.00698">One paper</a> - Accepted by <a href="https://www.robotmechanisms.org/activities/icra-2024-codesign", style="text-decoration: underline; color: #666666; font-style: italic;" >ICRA 2024 Workshop on Co-design in Robotics</a> as Technical Spotlight Oral &nbsp;&nbsp;<span style="color: #808080; font-size: 0.9em; border: 1px solid #ddd; padding: 2px 6px; border-radius: 3px;">May 2024</span>
                   </div>
