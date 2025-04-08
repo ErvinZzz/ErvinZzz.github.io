@@ -33,7 +33,21 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%;text-align:center">
-                <a href="images/pic.png"><img style="width:85%;max-width:85%;object-fit: cover; border-radius: 2%;" alt="profile photo" src="images/pic.png" class="hoverZoomLink"></a>
+                <div class="one" onmouseout="profile_stop()" onmouseover="profile_start()">
+                  <div class="two" id='profile_image'><img style="width:65%;max-width:65%;object-fit: cover; border-radius: 3%;" alt="profile photo hover" src="images/pic2.png"></div>
+                  <img style="width:65%;max-width:65%;object-fit: cover; border-radius: 3%;" alt="profile photo" src="images/pic.png">
+                </div>
+                
+                <script type="text/javascript">
+                  function profile_start() {
+                    document.getElementById('profile_image').style.opacity = "1";
+                  }
+
+                  function profile_stop() {
+                    document.getElementById('profile_image').style.opacity = "0";
+                  }
+                  profile_stop()
+                </script>
               </td>
             </tr>
           </tbody></table>
