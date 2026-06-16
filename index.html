@@ -2,361 +2,236 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Lechen Zhang</title>
-
     <meta name="author" content="Lechen Zhang">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lechen Zhang — Robotics PhD student at MBZUAI. Computer vision, deep learning, generative AI, and robotics.">
+
+    <meta property="og:title" content="Lechen Zhang">
+    <meta property="og:description" content="Robotics PhD student. Vision, generative AI, and robots that understand the physical world.">
+    <meta property="og:type" content="website">
+
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:70%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Lechen Zhang
-                </p>
-                <p>I'm a first year Robotics PhD student at <a href="https://mbzuai.ac.ae/">MBZUAI</a>. Prior to that, I was a graduate research assistant in the <a href="https://www.creativemachineslab.com/">Creative Machines Lab</a> at <a href="https://www.columbia.edu/">Columbia University</a> under Professor <a href="https://www.hodlipson.com/">Hod Lipson</a>.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:lechen.zhang@columbia.edu">Email</a> &nbsp;/&nbsp;
-                  <!-- <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp; -->
-                  <a href="https://scholar.google.com/citations?user=8ETNwBsAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/ErvinZzz">Github</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/lechenzhang/">LinkedIn</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <div class="one" onmouseout="profile_stop()" onmouseover="profile_start()">
-                  <div class="two" id='profile_image'><img style="width:70%;max-width:70%;object-fit: cover; border-radius: 3%;" alt="profile photo hover" src="images/pic2.png"></div>
-                  <img style="width:70%;max-width:70%;object-fit: cover; border-radius: 3%;" alt="profile photo" src="images/pic.png">
-                </div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
 
-                <script type="text/javascript">
-                  function profile_start() {
-                    document.getElementById('profile_image').style.opacity = "1";
-                  }
+    <!-- ── top bar ─────────────────────────────────────────── -->
+    <header class="topbar">
+      <div class="wrap">
+        <span class="mark">L<b>/</b>Z</span>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="https://scholar.google.com/citations?user=8ETNwBsAAAAJ&hl=en">Scholar</a>
+          <a href="mailto:lechen.zhang@columbia.edu">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-                  function profile_stop() {
-                    document.getElementById('profile_image').style.opacity = "0";
-                  }
-                  profile_stop()
-                </script>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-bottom: -20px;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in the intersection of computer vision, deep learning, generative AI, and robotics. My research focuses on understanding the physical world — including shape, motion, depth, and appearance — from sensor observations, with applications in robotic design and human-robot interaction.
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr onmouseout="gaze_stop()" onmouseover="gaze_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='gaze_image'><img src='images/gaze.gif' width="100%"></div>
-                  <img src='images/gaze.jpg' width="100%">
-                </div>
-                <script type="text/javascript">
-                  function gaze_start() {
-                    document.getElementById('gaze_image').style.opacity = "1";
-                  }
-
-                  function gaze_stop() {
-                    document.getElementById('gaze_image').style.opacity = "0";
-                  }
-                  gaze_stop()
-                </script>
-              </td>
-              <td style="padding:10px; width:60%; vertical-align:middle;">
-                <a href="https://www.lechen-zhang.com/">
-                  <span class="papertitle">Eye, Robot: Learning Realistic Robot Gaze From Human Motion Data</span>
-                </a>
-                <br>
-                <br>
-                Under Review
-                <br>
-                <p></p>
-                <p>
-                  Realistic Gaze Transformer (RGT), a Transformer-VAE framework that learns full-head gaze dynamics, including head rotations and eyelid movements, from human motion capture data.
-                </p>
-              </td>
-            </tr>
-            
-            <tr onmouseout="au_stop()" onmouseover="au_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='au_image'><img src='images/au.gif' width="100%"></div>
-                  <img src='images/au.jpg' width="100%">
-                </div>
-                <script type="text/javascript">
-                  function au_start() {
-                    document.getElementById('au_image').style.opacity = "1";
-                  }
-
-                  function au_stop() {
-                    document.getElementById('au_image').style.opacity = "0";
-                  }
-                  au_stop()
-                </script>
-              </td>
-              <td style="padding:10px; width:60%; vertical-align:middle;">
-                <a href="https://cvpr.thecvf.com/virtual/2025/poster/33613">
-                  <span class="papertitle">AutoURDF: Unsupervised Robot Modeling from 4D Point Cloud</span>
-                </a>
-                <br>
-                <a href="https://jl6017.github.io/">Jiong Lin</a>,
-                <strong>Lechen Zhang</strong>, 
-                <a href="https://www.linkedin.com/in/steve-kwansoo-lee/?locale=en_US">Kwansoo Lee</a>, 
-                <a href="https://pigker.github.io/">Jialong Ning</a>,
-                <a href="https://judahgoldfeder.com/">Judah Goldfeder</a>,
-                <a href="https://hodlipson.com">Hod Lipson</a>
-                <br>
-                <em>CVPR</em> 2025 (Acceptance Rate: 22.1%)
-                <br>
-                <a href="https://jl6017.github.io/AutoURDF/">project page</a>
-                /
-                <a href="https://arxiv.org/abs/2412.05507">arXiv</a>
-                <p></p>
-                <p>
-                  An unsupervised approach for understanding robot motion and constructing description files for unseen robots from point cloud frames.
-                </p>
-              </td>
-            </tr>
-
-
-        <tr onmouseout="mod_stop()" onmouseover="mod_start()">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='mod_image'><img src='images/modrgb.png' width="100%"></div>
-              <img src='images/mod.png' width="100%">
-            </div>
-            <script type="text/javascript">
-              function mod_start() {
-                document.getElementById('mod_image').style.opacity = "1";
-              }
-
-              function mod_stop() {
-                document.getElementById('mod_image').style.opacity = "0";
-              }
-              mod_stop()
-            </script>
-          </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/10753089">
-          <span class="papertitle">MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction</span>
-        </a>
-        <br>
-        <a href="https://ieeexplore.ieee.org/author/869050345208573">Heng Zhou</a>,
-        <a href="https://ieeexplore.ieee.org/author/872083755767558">Zhetao Guo</a>,
-        <a href="https://ieeexplore.ieee.org/author/37090070261">Yuxiang Ren</a>,
-        <a href="https://ieeexplore.ieee.org/author/767314844649418">Shuhong Liu</a>,
-				<strong>Lechen Zhang</strong>, 
-        <a href="https://ieeexplore.ieee.org/author/37089912518">Kaidi Zhang</a>,
-        <a href="https://ieeexplore.ieee.org/author/37090023528">Mingrui Li</a>,
-        <br>
-        <em>IEEE Robotics and Automation Letters (RA-L)</em>
-        <br>
-        <a href="https://arxiv.org/abs/2402.03762">arXiv</a>
-        <p></p>
-        <p>
-        Monocular SLAM with metric depth estimation and Gaussian-based unbounded scene representation.
-        </p>
-      </td>
-    </tr>
-
-      <tr onmouseout="ea_stop()" onmouseover="ea_start()">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <div class="one">
-              <div class="two" id='ea_image'><img src='images/ea.gif' width="100%"></div>
-              <img src='images/ea.png' width="100%">
-            </div>
-            <script type="text/javascript">
-              function ea_start() {
-                document.getElementById('ea_image').style.opacity = "1";
-              }
-
-              function ea_stop() {
-                document.getElementById('ea_image').style.opacity = "0";
-              }
-              ea_stop()
-            </script>
-          </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2405.00698">
-          <span class="papertitle">Soft Robot Neural Evolution with LLMs Supervision</span>
-        </a>
-        <br>
-        <strong>Lechen Zhang</strong>
-        <br>
-        <em>ICRA</em> 2024, Workshop on Co-design in Robotics, Oral
-        <br>
-        <a href="https://www.robotmechanisms.org/activities/icra-2024-codesign">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.00698">arXiv</a>
-        <p></p>
-        <p>
-        A computational framework for automatically designing soft robot morphologies using large language models for design guidance and physics simulation for evaluation.
-        </p>
-      </td>
-    </tr>
-
-  <!-- </tbody></table>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top: -30px;"><tbody>
-      <tr>
-      <td style="padding:16px;width:100%;vertical-align:middle">
-        <h2>Project</h2>
-      </td>
-    </tr>
-  </tbody></table>
-  <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr onmouseout="rope_stop()" onmouseover="rope_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='rope_image'><img src='images/mixed.png' width="100%"></div>
-          <img src='images/axial.png' width="100%">
-        </div>
-        <script type="text/javascript">
-          function rope_start() {
-            document.getElementById('rope_image').style.opacity = "1";
-          }
-
-          function rope_stop() {
-            document.getElementById('rope_image').style.opacity = "0";
-          }
-          rope_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-          <span class="papertitle">Rotaray Positional Encoding for Linear Attention Vision Transformers</span>
-        <br>
-        <br>
-        IEOR E6617 Machine Learning & High-Dimensional Data Analysis course project advised by Prof. <a href="https://scholar.google.com/citations?user=J8OgouwAAAAJ&hl=en">Krzysztof Choromanski</a>
-        <br>
-        <a href="https://github.com/ErvinZzz/RoPE-ViT-Performer">code</a>
-        /
-        <a href="https://github.com/ErvinZzz/RoPE-ViT-Performer/blob/main/results/IEORE6617_lechen_zhang.pdf">report</a>
-        <p></p>
-        <p>
-        Implemented a linear attention vision transformer with axial and mixed diagonal rotary positional encoding and applied it to the task of image classification.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="link_stop()" onmouseover="link_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle;padding-top:55px;">
-        <div class="one">
-          <div class="two" id='link_image'><img src='images/link.gif' width="100%"></div>
-          <img src='images/link.png' width="100%">
-        </div>
-        <script type="text/javascript">
-          function link_start() {
-            document.getElementById('link_image').style.opacity = "1";
-          }
-
-          function link_stop() {
-            document.getElementById('link_image').style.opacity = "0";
-          }
-          link_stop()
-        </script>
-      </td>
-
-      <td style="padding:8px;width:80%;vertical-align:middle">
-          <span class="papertitle">Neural Dynamics for Articulated Motion Prediction</span>
-        <br>
-        <br>
-        MECS 6616 Robot Learning course project advised by Prof. <a href="https://www.me.columbia.edu/faculty/matei-ciocarlie">Matei Ciocarlie</a>
-        <br>
-        <p></p>
-        <p>
-        Implemented a deep neural network model for predicting the motion of articulated mechanisms. The model can be generalized to unseen input configurations.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="dnerf_stop()" onmouseover="dnerf_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='dnerf_image'><img src='images/oursd.png' width="100%"></div>
-          <img src='images/snerg.png' width="100%">
-        </div>
-        <script type="text/javascript">
-          function dnerf_start() {
-            document.getElementById('dnerf_image').style.opacity = "1";
-          }
-
-          function dnerf_stop() {
-            document.getElementById('dnerf_image').style.opacity = "0";
-          }
-          dnerf_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-          <span class="papertitle">Monocular Metric Depth Informed Neural Radiance Fields</span>
-        <br>
-        <br>
-        <a href="https://ecbme4040.github.io/2024_fall/index.html">ECBM E4040</a> Neural Networks and Deep Learning course project advised by Prof. <a href="https://www.aidl.ee.columbia.edu/home_1">Zoran Kostić</a>
-        <p></p>
-        <p>
-        Implemented a monocular metric depth estimation method incorporated with Neural Radiance Fields. Improved PSNR by 13% compared to <a href="https://phog.github.io/snerg/">SNeRG</a>.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="bim_stop()" onmouseover="bim_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bim_image'><img src='images/mapping.png' width="100%"></div>
-          <img src='images/bim.png' width="100%">
-        </div>
-        <script type="text/javascript">
-          function bim_start() {
-            document.getElementById('bim_image').style.opacity = "1";
-          }
-
-          function bim_stop() {
-            document.getElementById('bim_image').style.opacity = "0";
-          }
-          bim_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-          <span class="papertitle">RoboBIM: An Autonomous Building Information Modeling System</span>
-        <br>
-        <br>
-        Bachelor's thesis project advised by Prof. <a href="https://research.nottingham.edu.cn/en/persons/adam-rushworth">Adam Rushworth</a>
-        <p></p>
-        <p>
-        Built an industrial-level building information modeling system hardware and software stack based on ROS that can automatically planning and mapping in indoor environments.
-        </p>
-      </td>
-    </tr> -->
-    </tbody></table>
-    <div style="text-align:center;padding:20px;">
-      <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=f0dcc8&w=300&t=n&d=JDmKomSS2J5xnRQBwjXQo_D4A2SqKamBwJkXD8XujWc&co=8cbfd9&cmo=e0a890&cmn=7eb89a&ct=555555'></script>
+    <!-- ── ribbon ──────────────────────────────────────────── -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <span>Computer Vision <i>✦</i></span><span>Robot Learning <i>✦</i></span>
+        <span>Generative AI <i>✦</i></span><span>Human–Robot Interaction <i>✦</i></span>
+        <span>3D Reconstruction <i>✦</i></span><span>Motion <i>✦</i></span>
+        <span>Computer Vision <i>✦</i></span><span>Robot Learning <i>✦</i></span>
+        <span>Generative AI <i>✦</i></span><span>Human–Robot Interaction <i>✦</i></span>
+        <span>3D Reconstruction <i>✦</i></span><span>Motion <i>✦</i></span>
+      </div>
     </div>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  The website template is from <a href="https://github.com/jonbarron/jonbarron_website">source code</a> by Jon Barron.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
+
+    <div class="wrap">
+
+      <!-- ── hero ──────────────────────────────────────────── -->
+      <section class="hero" style="border-top:none;padding-top:96px;">
+        <div class="hero-text reveal">
+          <p class="eyebrow"><span class="dot"></span>Robotics PhD · MBZUAI</p>
+          <h1>Lechen<br><em>Zhang</em></h1>
+          <p class="lede">
+            First-year Robotics PhD student at <a href="https://mbzuai.ac.ae/">MBZUAI</a>.
+            Previously a graduate research assistant in the
+            <a href="https://www.creativemachineslab.com/">Creative Machines Lab</a> at
+            <a href="https://www.columbia.edu/">Columbia University</a>, advised by Professor
+            <a href="https://www.hodlipson.com/">Hod Lipson</a>.
+          </p>
+          <div class="links">
+            <a href="mailto:lechen.zhang@columbia.edu">Email</a>
+            <a href="https://scholar.google.com/citations?user=8ETNwBsAAAAJ&hl=en">Scholar</a>
+            <a href="https://github.com/ErvinZzz">GitHub</a>
+            <a href="https://www.linkedin.com/in/lechenzhang/">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="portrait reveal" title="hover me">
+          <img class="base" src="images/pic.png" alt="Lechen Zhang">
+          <img class="alt" src="images/pic2.png" alt="" aria-hidden="true">
+          <span class="tag">Lechen</span>
+        </div>
+      </section>
+
+      <!-- ── about ─────────────────────────────────────────── -->
+      <section id="about">
+        <div class="sec-head reveal">
+          <span class="sec-num">001</span>
+          <h2>Research</h2>
+          <span class="sec-line"></span>
+        </div>
+        <p class="about-body reveal">
+          I'm interested in the intersection of <strong>computer vision</strong>,
+          <strong>deep learning</strong>, <strong>generative AI</strong>, and
+          <strong>robotics</strong>. My research focuses on understanding the physical
+          world — shape, motion, depth, and appearance — from sensor observations, with
+          applications in robotic design and human–robot interaction.
+        </p>
+      </section>
+
+      <!-- ── work ──────────────────────────────────────────── -->
+      <section id="work">
+        <div class="sec-head reveal">
+          <span class="sec-num">002</span>
+          <h2>Selected Work</h2>
+          <span class="sec-line"></span>
+        </div>
+
+        <!-- Eye, Robot -->
+        <article class="entry reveal">
+          <figure class="thumb">
+            <img class="base" src="images/gaze.jpg" alt="Eye, Robot">
+            <img class="alt" src="images/gaze.gif" alt="" aria-hidden="true" loading="lazy">
+            <span class="corner">hover ▸ play</span>
+          </figure>
+          <div class="entry-body">
+            <span class="venue review">Under Review</span>
+            <h3><a href="https://www.lechen-zhang.com/">Eye, Robot: Learning Realistic Robot Gaze From Human Motion Data</a></h3>
+            <p class="desc">
+              Realistic Gaze Transformer (RGT), a Transformer-VAE framework that learns
+              full-head gaze dynamics — including head rotations and eyelid movements —
+              from human motion-capture data.
+            </p>
+          </div>
+        </article>
+
+        <!-- AutoURDF -->
+        <article class="entry reveal">
+          <figure class="thumb">
+            <img class="base" src="images/au.jpg" alt="AutoURDF">
+            <img class="alt" src="images/au.gif" alt="" aria-hidden="true" loading="lazy">
+            <span class="corner">hover ▸ play</span>
+          </figure>
+          <div class="entry-body">
+            <span class="venue">CVPR 2025 · 22.1% accept</span>
+            <h3><a href="https://cvpr.thecvf.com/virtual/2025/poster/33613">AutoURDF: Unsupervised Robot Modeling from 4D Point Cloud</a></h3>
+            <p class="authors">
+              <a href="https://jl6017.github.io/">Jiong Lin</a>,
+              <strong>Lechen Zhang</strong>,
+              <a href="https://www.linkedin.com/in/steve-kwansoo-lee/?locale=en_US">Kwansoo Lee</a>,
+              <a href="https://pigker.github.io/">Jialong Ning</a>,
+              <a href="https://judahgoldfeder.com/">Judah Goldfeder</a>,
+              <a href="https://hodlipson.com">Hod Lipson</a>
+            </p>
+            <p class="meta">
+              <a href="https://jl6017.github.io/AutoURDF/">project page</a> ·
+              <a href="https://arxiv.org/abs/2412.05507">arXiv</a>
+            </p>
+            <p class="desc">
+              An unsupervised approach for understanding robot motion and constructing
+              description files for unseen robots directly from point-cloud frames.
+            </p>
+          </div>
+        </article>
+
+        <!-- MoD-SLAM -->
+        <article class="entry reveal">
+          <figure class="thumb">
+            <img class="base" src="images/mod.png" alt="MoD-SLAM">
+            <img class="alt" src="images/modrgb.png" alt="" aria-hidden="true" loading="lazy">
+            <span class="corner">hover ▸ rgb</span>
+          </figure>
+          <div class="entry-body">
+            <span class="venue">IEEE RA-L</span>
+            <h3><a href="https://ieeexplore.ieee.org/abstract/document/10753089">MoD-SLAM: Monocular Dense Mapping for Unbounded 3D Scene Reconstruction</a></h3>
+            <p class="authors">
+              <a href="https://ieeexplore.ieee.org/author/869050345208573">Heng Zhou</a>,
+              <a href="https://ieeexplore.ieee.org/author/872083755767558">Zhetao Guo</a>,
+              <a href="https://ieeexplore.ieee.org/author/37090070261">Yuxiang Ren</a>,
+              <a href="https://ieeexplore.ieee.org/author/767314844649418">Shuhong Liu</a>,
+              <strong>Lechen Zhang</strong>,
+              <a href="https://ieeexplore.ieee.org/author/37089912518">Kaidi Zhang</a>,
+              <a href="https://ieeexplore.ieee.org/author/37090023528">Mingrui Li</a>
+            </p>
+            <p class="meta">
+              <a href="https://arxiv.org/abs/2402.03762">arXiv</a>
+            </p>
+            <p class="desc">
+              Monocular SLAM with metric depth estimation and a Gaussian-based unbounded
+              scene representation.
+            </p>
+          </div>
+        </article>
+
+        <!-- Soft Robot Neural Evolution -->
+        <article class="entry reveal">
+          <figure class="thumb">
+            <img class="base" src="images/ea.png" alt="Soft Robot Neural Evolution">
+            <img class="alt" src="images/ea.gif" alt="" aria-hidden="true" loading="lazy">
+            <span class="corner">hover ▸ play</span>
+          </figure>
+          <div class="entry-body">
+            <span class="venue">ICRA 2024 · Workshop · Oral</span>
+            <h3><a href="https://arxiv.org/abs/2405.00698">Soft Robot Neural Evolution with LLMs Supervision</a></h3>
+            <p class="authors"><strong>Lechen Zhang</strong></p>
+            <p class="meta">
+              <a href="https://www.robotmechanisms.org/activities/icra-2024-codesign">project page</a> ·
+              <a href="https://arxiv.org/abs/2405.00698">arXiv</a>
+            </p>
+            <p class="desc">
+              A computational framework for automatically designing soft-robot morphologies,
+              using large language models for design guidance and physics simulation for
+              evaluation.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ── footer ────────────────────────────────────────── -->
+      <footer>
+        <div class="visitor">
+          <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=f0dcc8&w=300&t=n&d=JDmKomSS2J5xnRQBwjXQo_D4A2SqKamBwJkXD8XujWc&co=8cbfd9&cmo=e0a890&cmn=7eb89a&ct=555555'></script>
+        </div>
+        <p class="colophon">
+          See you, space cowboy.<br>
+          Template originally from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a> · rebuilt &amp; restyled.
+        </p>
+      </footer>
+
+    </div>
+
+    <!-- ── scroll reveal ───────────────────────────────────── -->
+    <script>
+      (function () {
+        var els = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) {
+          els.forEach(function (e) { e.classList.add('in'); });
+          return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) {
+              en.target.classList.add('in');
+              io.unobserve(en.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        els.forEach(function (e) { io.observe(e); });
+      })();
+    </script>
   </body>
 </html>
