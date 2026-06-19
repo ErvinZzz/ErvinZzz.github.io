@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2eee2">
 
     <title>Lechen Zhang</title>
     <meta name="author" content="Lechen Zhang">
@@ -14,19 +15,29 @@
 
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
   <body>
-    <div class="grain"></div>
-    <div class="vignette"></div>
 
     <!-- ── top bar ─────────────────────────────────────────── -->
     <header class="topbar">
       <div class="wrap">
-        <span class="mark">L<b>/</b>Z</span>
+        <span class="mark">
+          <svg class="glyph" viewBox="0 0 16 16" aria-hidden="true">
+            <rect x="0" y="0" width="8" height="8" fill="#2a4bd0"></rect>
+            <circle cx="12" cy="4" r="4" fill="#f4b41a"></circle>
+            <path d="M0 16 L8 16 L4 8 Z" fill="#e0402b"></path>
+            <rect x="8" y="9" width="8" height="7" fill="#18171c"></rect>
+          </svg>
+          Lechen&nbsp;Zhang
+        </span>
         <nav class="nav">
           <a href="#about">About</a>
           <a href="#work">Work</a>
@@ -36,25 +47,13 @@
       </div>
     </header>
 
-    <!-- ── ribbon ──────────────────────────────────────────── -->
-    <div class="ribbon" aria-hidden="true">
-      <div class="ribbon-track">
-        <span>Computer Vision <i>✦</i></span><span>Robot Learning <i>✦</i></span>
-        <span>Generative AI <i>✦</i></span><span>Human–Robot Interaction <i>✦</i></span>
-        <span>3D Reconstruction <i>✦</i></span><span>Motion <i>✦</i></span>
-        <span>Computer Vision <i>✦</i></span><span>Robot Learning <i>✦</i></span>
-        <span>Generative AI <i>✦</i></span><span>Human–Robot Interaction <i>✦</i></span>
-        <span>3D Reconstruction <i>✦</i></span><span>Motion <i>✦</i></span>
-      </div>
-    </div>
-
     <div class="wrap">
 
       <!-- ── hero ──────────────────────────────────────────── -->
-      <section class="hero" style="border-top:none;padding-top:96px;">
+      <section class="hero" style="border-top:none;">
         <div class="hero-text reveal">
           <p class="eyebrow"><span class="dot"></span>Robotics PhD · MBZUAI</p>
-          <h1>Lechen<br><em>Zhang</em></h1>
+          <h1>Lechen<em>Zhang</em></h1>
           <p class="lede">
             First-year Robotics PhD student at <a href="https://mbzuai.ac.ae/">MBZUAI</a>.
             Previously a graduate research assistant in the
@@ -71,16 +70,24 @@
         </div>
 
         <div class="portrait reveal" title="hover me">
-          <img class="base" src="images/pic.png" alt="Lechen Zhang">
-          <img class="alt" src="images/pic2.png" alt="" aria-hidden="true">
-          <span class="tag">Lechen</span>
+          <div class="frame">
+            <img class="base" src="images/pic.png" alt="Lechen Zhang" width="268" height="268" decoding="async">
+            <img class="alt" data-src="images/pic2.png" alt="" aria-hidden="true"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          </div>
+          <span class="tri" aria-hidden="true"></span>
         </div>
       </section>
 
       <!-- ── about ─────────────────────────────────────────── -->
       <section id="about">
         <div class="sec-head reveal">
-          <span class="sec-num">001</span>
+          <span class="sec-num">01</span>
+          <svg class="sec-mark" viewBox="0 0 26 26" aria-hidden="true">
+            <circle cx="9" cy="13" r="9" fill="#2a4bd0"></circle>
+            <rect x="15" y="4" width="9" height="9" fill="#f4b41a"></rect>
+            <path d="M15 24 L24 24 L24 15 Z" fill="#e0402b"></path>
+          </svg>
           <h2>Research</h2>
           <span class="sec-line"></span>
         </div>
@@ -96,7 +103,12 @@
       <!-- ── work ──────────────────────────────────────────── -->
       <section id="work">
         <div class="sec-head reveal">
-          <span class="sec-num">002</span>
+          <span class="sec-num">02</span>
+          <svg class="sec-mark" viewBox="0 0 26 26" aria-hidden="true">
+            <path d="M2 24 L13 2 L24 24 Z" fill="#e0402b"></path>
+            <circle cx="13" cy="17" r="6" fill="#f4b41a"></circle>
+            <rect x="9" y="13" width="8" height="8" fill="#2a4bd0"></rect>
+          </svg>
           <h2>Selected Work</h2>
           <span class="sec-line"></span>
         </div>
@@ -104,8 +116,9 @@
         <!-- Eye, Robot -->
         <article class="entry reveal">
           <figure class="thumb">
-            <img class="base" src="images/gaze.jpg" alt="Eye, Robot">
-            <img class="alt" src="images/gaze.gif" alt="" aria-hidden="true" loading="lazy">
+            <img class="base" src="images/gaze.jpg" alt="Eye, Robot" loading="lazy" decoding="async">
+            <img class="alt" data-src="images/gaze.gif" alt="" aria-hidden="true"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
             <span class="corner">hover ▸ play</span>
           </figure>
           <div class="entry-body">
@@ -122,8 +135,9 @@
         <!-- AutoURDF -->
         <article class="entry reveal">
           <figure class="thumb">
-            <img class="base" src="images/au.jpg" alt="AutoURDF">
-            <img class="alt" src="images/au.gif" alt="" aria-hidden="true" loading="lazy">
+            <img class="base" src="images/au.jpg" alt="AutoURDF" loading="lazy" decoding="async">
+            <img class="alt" data-src="images/au.gif" alt="" aria-hidden="true"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
             <span class="corner">hover ▸ play</span>
           </figure>
           <div class="entry-body">
@@ -137,8 +151,8 @@
               <a href="https://judahgoldfeder.com/">Judah Goldfeder</a>,
               <a href="https://hodlipson.com">Hod Lipson</a>
             </p>
-            <p class="meta">
-              <a href="https://jl6017.github.io/AutoURDF/">project page</a> ·
+            <p class="pubrow">
+              <a href="https://jl6017.github.io/AutoURDF/">Project</a>
               <a href="https://arxiv.org/abs/2412.05507">arXiv</a>
             </p>
             <p class="desc">
@@ -151,8 +165,9 @@
         <!-- MoD-SLAM -->
         <article class="entry reveal">
           <figure class="thumb">
-            <img class="base" src="images/mod.png" alt="MoD-SLAM">
-            <img class="alt" src="images/modrgb.png" alt="" aria-hidden="true" loading="lazy">
+            <img class="base" src="images/mod.png" alt="MoD-SLAM" loading="lazy" decoding="async">
+            <img class="alt" data-src="images/modrgb.png" alt="" aria-hidden="true"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
             <span class="corner">hover ▸ rgb</span>
           </figure>
           <div class="entry-body">
@@ -167,7 +182,7 @@
               <a href="https://ieeexplore.ieee.org/author/37089912518">Kaidi Zhang</a>,
               <a href="https://ieeexplore.ieee.org/author/37090023528">Mingrui Li</a>
             </p>
-            <p class="meta">
+            <p class="pubrow">
               <a href="https://arxiv.org/abs/2402.03762">arXiv</a>
             </p>
             <p class="desc">
@@ -180,16 +195,17 @@
         <!-- Soft Robot Neural Evolution -->
         <article class="entry reveal">
           <figure class="thumb">
-            <img class="base" src="images/ea.png" alt="Soft Robot Neural Evolution">
-            <img class="alt" src="images/ea.gif" alt="" aria-hidden="true" loading="lazy">
+            <img class="base" src="images/ea.png" alt="Soft Robot Neural Evolution" loading="lazy" decoding="async">
+            <img class="alt" data-src="images/ea.gif" alt="" aria-hidden="true"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
             <span class="corner">hover ▸ play</span>
           </figure>
           <div class="entry-body">
             <span class="venue">ICRA 2024 · Workshop · Oral</span>
             <h3><a href="https://arxiv.org/abs/2405.00698">Soft Robot Neural Evolution with LLMs Supervision</a></h3>
             <p class="authors"><strong>Lechen Zhang</strong></p>
-            <p class="meta">
-              <a href="https://www.robotmechanisms.org/activities/icra-2024-codesign">project page</a> ·
+            <p class="pubrow">
+              <a href="https://www.robotmechanisms.org/activities/icra-2024-codesign">Project</a>
               <a href="https://arxiv.org/abs/2405.00698">arXiv</a>
             </p>
             <p class="desc">
@@ -207,30 +223,45 @@
           <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=f0dcc8&w=300&t=n&d=JDmKomSS2J5xnRQBwjXQo_D4A2SqKamBwJkXD8XujWc&co=8cbfd9&cmo=e0a890&cmn=7eb89a&ct=555555'></script>
         </div>
         <p class="colophon">
-          See you, space cowboy.<br>
+          Built from scratch · form follows function.<br>
           Template originally from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a> · rebuilt &amp; restyled.
         </p>
       </footer>
 
     </div>
 
-    <!-- ── scroll reveal ───────────────────────────────────── -->
+    <!-- ── scripts: reveal + on-demand heavy-asset loading ─── -->
     <script>
       (function () {
+        // Reveal on scroll
         var els = document.querySelectorAll('.reveal');
-        if (!('IntersectionObserver' in window)) {
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+            });
+          }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+          els.forEach(function (e) { io.observe(e); });
+        } else {
           els.forEach(function (e) { e.classList.add('in'); });
-          return;
         }
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (en) {
-            if (en.isIntersecting) {
-              en.target.classList.add('in');
-              io.unobserve(en.target);
-            }
-          });
-        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-        els.forEach(function (e) { io.observe(e); });
+
+        // Load heavy hover assets (GIFs / large PNGs) only on first interaction.
+        // Keeps the initial page light — none of the multi-MB animations download
+        // until the user actually hovers (or focuses) the figure.
+        function arm(container) {
+          var img = container.querySelector('.alt[data-src]');
+          if (!img) return;
+          var load = function () {
+            img.src = img.getAttribute('data-src');
+            img.removeAttribute('data-src');
+            container.removeEventListener('pointerenter', load);
+            container.removeEventListener('focusin', load);
+          };
+          container.addEventListener('pointerenter', load);
+          container.addEventListener('focusin', load);
+        }
+        document.querySelectorAll('.thumb, .portrait').forEach(arm);
       })();
     </script>
   </body>
